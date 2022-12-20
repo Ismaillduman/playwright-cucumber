@@ -1,6 +1,6 @@
 
 import{Given ,When,Then} from '@cucumber/cucumber'
-import {page} from '../steps/world'
+import {page} from '../hooks/world'
 import{expect} from '@playwright/test'
 import { LoginPage } from '../page_objects/LoginPage';
 import { DashboardPage } from "../page_objects/DashboardPage";
