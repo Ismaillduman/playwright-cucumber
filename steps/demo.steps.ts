@@ -3,10 +3,7 @@ import{Given ,When,Then} from '@cucumber/cucumber'
 import {page} from '../steps/world'
 import{expect} from '@playwright/test'
 import { LoginPage } from '../page_objects/LoginPage';
-
-
-
-
+import { DashboardPage } from "../page_objects/DashboardPage";
 
 
 
@@ -45,4 +42,25 @@ import { LoginPage } from '../page_objects/LoginPage';
   Then('I should not see the home page title \'Let\'s Shop\'', async function () {
     const loginPage= new LoginPage(page);
     await loginPage.invalidLoginMessage();
+  });
+
+  Given('User should be able to open dashboard Page', async function () {
+    const dashboardPage=new DashboardPage(page);
+   await dashboardPage.goToDashboardPage();
+   
+  });
+
+  
+
+  When('user should be able to add the selected product {string} to the cart',async function (productName:string) {
+   
+    const dashboardPage=new DashboardPage(page);
+    await dashboardPage.addProduct(productName);
+  });
+
+
+
+  Then('user can be able to navi to chart page', async function () {
+    const dashboardPage= new DashboardPage(page);
+await dashboardPage.naviToCart();
   });

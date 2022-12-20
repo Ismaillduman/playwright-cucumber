@@ -1,20 +1,35 @@
 import { Locator, Page } from "@playwright/test";
+import test from "node:test";
 
 export class DashboardPage {
   product: Locator;
   productText: Locator;
   addCart: string;
   cart: Locator;
+  signInbutton: Locator;
+  email: Locator;
+  password: Locator;
+  page:Page;
+
  
 
   constructor(page: Page) {
     // i can write here public page:Page
-
+this.page=page;
     this.product = page.locator("div .card-body");
     this.productText = page.locator("div .card-body b");
     this.addCart = ".w-10";
     this.cart = page.locator("[routerlink='/dashboard/cart']");
+    this.email = page.locator("#userEmail");
+    this.password = page.locator("#userPassword");
+    this.signInbutton = page.locator("[value='Login']");
    
+  }
+  async goToDashboardPage(){
+await this.email.fill('busrayusuf@gmail.com');
+await this.password.fill('HKNclb8318.');
+await this.signInbutton.click();
+await this.page.waitForLoadState("networkidle");
   }
 
   async addProduct(productName: string) {
