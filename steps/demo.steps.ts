@@ -78,7 +78,7 @@ await dashboardPage.naviToCart();
     await cartPage.checkOut();
 
   });
-  Then('check to the correctness of the user Email {string} on the Cart Page',async function (userName:string) {
+  Then('check to the correctness of the user Email {string} on the Cart Page',async function (userName) {
    const placeOrderPage=new PlaceOrderPage(page);
    await placeOrderPage.verifyUserEmail(userName);
   });
