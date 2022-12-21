@@ -1,0 +1,226 @@
+[
+  {
+    "description": "  As a user\n  I want to login into application",
+    "elements": [
+      {
+        "description": "",
+        "id": "client-app-action;from-dashboard-page--add-the-product-to-the-cart.",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "From dashboard page  add the product to the cart.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2316573499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "User should be able to open dashboard Page",
+            "match": {
+              "location": "steps/demo.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1514579541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "user should be able to add the selected product 'zara coat 3' to the cart",
+            "match": {
+              "location": "steps/demo.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63645500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "user can be able to navi to chart page",
+            "match": {
+              "location": "steps/demo.steps.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1558690167
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 73883624
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "client-app-action;from-dashboard-page--add-the-product-to-the-cart.",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "From dashboard page  add the product to the cart.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2221229915
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "User should be able to open dashboard Page",
+            "match": {
+              "location": "steps/demo.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1452571124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "user should be able to add the selected product 'adidas original' to the cart",
+            "match": {
+              "location": "steps/demo.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58460874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "user can be able to navi to chart page",
+            "match": {
+              "location": "steps/demo.steps.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1499139291
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 62347457
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "client-app-action;from-dashboard-page--add-the-product-to-the-cart.",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "From dashboard page  add the product to the cart.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2812352332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "User should be able to open dashboard Page",
+            "match": {
+              "location": "steps/demo.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1481201249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "user should be able to add the selected product 'iphone 13 pro' to the cart",
+            "match": {
+              "location": "steps/demo.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76379999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "user can be able to navi to chart page",
+            "match": {
+              "location": "steps/demo.steps.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1527241124
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 67574458
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "client-app-action",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Client App action",
+    "tags": [],
+    "uri": "features/clientApp.feature"
+  }
+]
