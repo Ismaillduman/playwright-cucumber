@@ -39,7 +39,7 @@ Feature: Client App action
     Then  user can be able to navi to chart page
     Then  user check to  the correctness of the product '<productName>' on the Cart Page
     Then user click checkout button
-    Then check to the correctness of the user Email 'busrayusuf@gmail.com' on the Cart Page
+    Then check to the correctness of the user Email '<userName>' on the Cart Page
     Then user should be able select 'ind' , 'India' the country
     Then user should be able to click place order button and verify the confirmation text
 
@@ -48,10 +48,10 @@ Feature: Client App action
 
 
     Examples:
-      | productName     |
-      | zara coat 3     |
-      | adidas original |
-      | iphone 13 pro   |
+      | productName     | userName |
+      | zara coat 3     | busrayusuf@gmail.com |
+      | adidas original | busrayusuf@gmail.com |
+      | iphone 13 pro   | busrayusuf@gmail.com |
 
 
 
