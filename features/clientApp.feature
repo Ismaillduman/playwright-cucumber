@@ -38,12 +38,12 @@ Feature: Client App action
     When user should be able to add the selected product '<productName>' to the cart
     Then  user can be able to navi to chart page
 
- 
 
-Examples:
+
+    Examples:
       | productName     |
       | zara coat 3     |
-      | adidas original | 
+      | adidas original |
       | iphone 13 pro   |
 
 
