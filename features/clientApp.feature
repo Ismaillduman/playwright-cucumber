@@ -37,6 +37,13 @@ Feature: Client App action
     Given User should be able to open dashboard Page
     When user should be able to add the selected product '<productName>' to the cart
     Then  user can be able to navi to chart page
+    Then  user check to  the correctness of the product '<productName>' on the Cart Page
+    Then user click checkout button
+    Then check to the correctness of the user Email 'busrayusuf@gmail.com' on the Cart Page
+    Then user should be able select 'ind' , 'India' the country
+    Then user should be able to click place order button and verify the confirmation text
+
+
 
 
 
@@ -45,6 +52,9 @@ Feature: Client App action
       | zara coat 3     |
       | adidas original |
       | iphone 13 pro   |
+
+
+
 
 
 

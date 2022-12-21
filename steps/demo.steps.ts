@@ -4,6 +4,8 @@ import {page} from '../hooks/world'
 import{expect} from '@playwright/test'
 import { LoginPage } from '../page_objects/LoginPage';
 import { DashboardPage } from "../page_objects/DashboardPage";
+import { CartPage } from '../page_objects/CartPage';
+import { PlaceOrderPage } from '../page_objects/PlaceOrderPage';
 
 
 
@@ -63,4 +65,34 @@ import { DashboardPage } from "../page_objects/DashboardPage";
   Then('user can be able to navi to chart page', async function () {
     const dashboardPage= new DashboardPage(page);
 await dashboardPage.naviToCart();
+  });
+
+  Then('user check to  the correctness of the product {string} on the Cart Page', async function (productName) {
+    const cartPage=new CartPage(page);
+    // await page.pause()
+    await cartPage.getProductLocator(productName);
+    await cartPage.verifyProduct(productName);
+  });
+  Then('user click checkout button', async () => {
+    const cartPage= new CartPage(page);
+    await cartPage.checkOut();
+
+  });
+  Then('check to the correctness of the user Email {string} on the Cart Page',async function (userName:string) {
+   const placeOrderPage=new PlaceOrderPage(page);
+   await placeOrderPage.verifyUserEmail(userName);
+  });
+
+
+
+  Then('user should be able select {string} , {string} the country',async function (countrycode,countryName) {
+    const placeOrderPage=new PlaceOrderPage(page);
+    await placeOrderPage.userCountry(countrycode,countryName);
+  });
+
+
+
+  Then('user should be able to click place order button and verify the confirmation text',async function () {
+    const placeOrderPage=new PlaceOrderPage(page);
+    await placeOrderPage.orderConfirmationGetOrderId();
   });
