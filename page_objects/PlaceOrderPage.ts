@@ -8,7 +8,7 @@ export class PlaceOrderPage {
   placeOrderBtn: Locator;
   dropDown: Locator;
   confirmationText: Locator;
-  orderId: any;
+  orderId: Locator;
   ordersBtn:Locator;
   constructor(page: Page) {
     this.userEmail = page.locator(".mt-5 [type='text']").first();
