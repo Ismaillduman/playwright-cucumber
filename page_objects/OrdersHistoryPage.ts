@@ -1,5 +1,5 @@
-import { Locator, Page } from "@playwright/test";
-
+import { Locator, Page, expect } from "@playwright/test";
+import { PlaceOrderPage } from "./PlaceOrderPage";
 
 export class OrdersHistoryPage{
 orderTable:Locator;
@@ -21,25 +21,26 @@ this.idDetails=page.locator(".col-text");
         
     }
 
-    async selectOrderId(orderId){
+    async selectOrderId(orderId:string){
       
+    
       
         await this.orderTable.waitFor();
        
         const count= await this.rows.count();
         for(let i=0;i<count;i++){
 const rowOrderId=await this.rows.nth(i).locator('th').textContent();
-if( orderId.includes(rowOrderId) )
+if( orderId!.includes(rowOrderId!) )
 {
 await this.rows.nth(i).locator('td button').first().click();
 break;
 }
         }
 
-
+      
     }
     
-async getOrderId()
+async getOrderDetailsId()
 {
 return await this.idDetails.textContent();
 

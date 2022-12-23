@@ -4,11 +4,7 @@ Feature: Client App action
   I want to login into application
 
 
-  # Scenario: Login with valid credentials
-  #   Given I fill the login form with valid userName and password
-  #   Then I should see the home page title 'Let's Shop'
-
-
+@demo
   Scenario Outline: Login with valid credentials
 
     Given I fill the login form with valid '<userName>' and '<password>'
@@ -19,7 +15,7 @@ Feature: Client App action
       | busrayusuf@gmail.com | HKNclb8318. |
       | ismaildumann@web.de  | HKNclb8318. |
 
-
+@demo
   Scenario Outline: User Try to login with invalid credentials
 
     Given I fill the login form with invalid '<userName>' and '<password>'
@@ -42,6 +38,9 @@ Feature: Client App action
     Then check to the correctness of the user Email '<userName>' on the Cart Page
     Then user should be able select 'ind' , 'India' the country
     Then user should be able to click place order button and verify the confirmation text
+    Then user can be able to navi to orders
+    And user should be able to choose current product on history page and verify it
+    
 
 
 

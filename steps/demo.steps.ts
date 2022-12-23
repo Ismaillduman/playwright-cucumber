@@ -6,22 +6,11 @@ import { LoginPage } from '../page_objects/LoginPage';
 import { DashboardPage } from "../page_objects/DashboardPage";
 import { CartPage } from '../page_objects/CartPage';
 import { PlaceOrderPage } from '../page_objects/PlaceOrderPage';
+import { OrdersHistoryPage } from '../page_objects/OrdersHistoryPage';
+
+let orderId:string|null;
 
 
-
-// Given('I fill the login form with valid userName and password', async function () {
-//   const loginPage= new LoginPage(page);
-//   await loginPage.validLogin();
-    
-//   });;
-
-
-
-//   Then('I should see the home page title \'Let\'s Shop\'', async function () {
-//     const loginPage= new LoginPage(page);
-//     await loginPage.dashBoardPageTitleVerify();
-    
-//   });
 
   Given('I fill the login form with valid {string} and {string}', async function (userName, userpassword) {
     
@@ -94,5 +83,26 @@ await dashboardPage.naviToCart();
 
   Then('user should be able to click place order button and verify the confirmation text',async function () {
     const placeOrderPage=new PlaceOrderPage(page);
-    await placeOrderPage.orderConfirmationGetOrderId();
+   // await placeOrderPage.orderConfirmationGetOrderId();
+     orderId=await placeOrderPage.orderConfirmationGetOrderId();
+
   });
+
+  Then('user can be able to navi to orders',async function () {
+    const placeOrderPage=new PlaceOrderPage(page);
+    await placeOrderPage.naviOrders();
+    
+  });
+
+
+
+  Then('user should be able to choose current product on history page and verify it',async function () {
+    const ordersHistoryPage= new OrdersHistoryPage(page);
+    await ordersHistoryPage.selectOrderId(orderId!);
+    expect(orderId?.includes(await ordersHistoryPage.getOrderDetailsId()as string)).toBeTruthy();
+
+  });
+
+
+
+ 

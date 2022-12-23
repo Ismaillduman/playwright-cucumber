@@ -4,9 +4,241 @@
     "elements": [
       {
         "description": "",
+        "id": "client-app-action;login-with-valid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 8,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2285009291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I fill the login form with valid 'busrayusuf@gmail.com' and 'HKNclb8318.'",
+            "match": {
+              "location": "steps/demo.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1482946959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the home page title 'Let's Shop'",
+            "match": {
+              "location": "steps/demo.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14310875
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 64713583
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "client-app-action;login-with-valid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 8,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2164034625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I fill the login form with valid 'ismaildumann@web.de' and 'HKNclb8318.'",
+            "match": {
+              "location": "steps/demo.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1590951124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the home page title 'Let's Shop'",
+            "match": {
+              "location": "steps/demo.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15045624
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 66924000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "client-app-action;user-try-to-login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "User Try to login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2314108041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "I fill the login form with invalid 'buusuf@gmail.com' and 'HKNclb8318.'",
+            "match": {
+              "location": "steps/demo.steps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 718546833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should not see the home page title 'Let's Shop'",
+            "match": {
+              "location": "steps/demo.steps.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20897708
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 72517291
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 18
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "client-app-action;user-try-to-login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "User Try to login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2260243000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "I fill the login form with invalid 'busrayusuf@gmail.com' and 'abhfkdsjnsömbjos'",
+            "match": {
+              "location": "steps/demo.steps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 814365124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should not see the home page title 'Let's Shop'",
+            "match": {
+              "location": "steps/demo.steps.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19023000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 81500791
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 18
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
         "id": "client-app-action;from-dashboard-page--add-the-product-to-the-cart.",
         "keyword": "Scenario Outline",
-        "line": 35,
+        "line": 31,
         "name": "From dashboard page  add the product to the cart.",
         "steps": [
           {
@@ -14,111 +246,137 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2772503125
+              "duration": 2289998624
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 37,
+            "line": 33,
             "name": "User should be able to open dashboard Page",
             "match": {
-              "location": "steps/demo.steps.ts:50"
+              "location": "steps/demo.steps.ts:53"
             },
             "result": {
               "status": "passed",
-              "duration": 1898661582
+              "duration": 1465750584
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 38,
+            "line": 34,
             "name": "user should be able to add the selected product 'zara coat 3' to the cart",
             "match": {
-              "location": "steps/demo.steps.ts:56"
+              "location": "steps/demo.steps.ts:59"
             },
             "result": {
               "status": "passed",
-              "duration": 64279417
+              "duration": 60319250
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 39,
+            "line": 35,
             "name": "user can be able to navi to chart page",
             "match": {
-              "location": "steps/demo.steps.ts:62"
+              "location": "steps/demo.steps.ts:65"
             },
             "result": {
               "status": "passed",
-              "duration": 1496258583
+              "duration": 1515312832
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 40,
+            "line": 36,
             "name": "user check to  the correctness of the product 'zara coat 3' on the Cart Page",
             "match": {
-              "location": "steps/demo.steps.ts:68"
+              "location": "steps/demo.steps.ts:71"
             },
             "result": {
               "status": "passed",
-              "duration": 4776000
+              "duration": 4242833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "user click checkout button",
+            "match": {
+              "location": "steps/demo.steps.ts:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 186029749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "check to the correctness of the user Email 'busrayusuf@gmail.com' on the Cart Page",
+            "match": {
+              "location": "steps/demo.steps.ts:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7914166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "user should be able select 'ind' , 'India' the country",
+            "match": {
+              "location": "steps/demo.steps.ts:89"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 682198000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "user should be able to click place order button and verify the confirmation text",
+            "match": {
+              "location": "steps/demo.steps.ts:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 437685290
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 41,
-            "name": "user click checkout button",
+            "name": "user can be able to navi to orders",
             "match": {
-              "location": "steps/demo.steps.ts:76"
+              "location": "steps/demo.steps.ts:102"
             },
             "result": {
               "status": "passed",
-              "duration": 191887125
+              "duration": 43398042
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 42,
-            "name": "check to the correctness of the user Email 'busrayusuf@gmail.com' on the Cart Page",
+            "name": "user should be able to choose current product on history page and verify it",
             "match": {
-              "location": "steps/demo.steps.ts:80"
+              "location": "steps/demo.steps.ts:108"
             },
             "result": {
               "status": "passed",
-              "duration": 7763041
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 43,
-            "name": "user should be able select 'ind' , 'India' the country",
-            "match": {
-              "location": "steps/demo.steps.ts:86"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 681336541
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 44,
-            "name": "user should be able to click place order button and verify the confirmation text",
-            "match": {
-              "location": "steps/demo.steps.ts:92"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 486443415
+              "duration": 406264708
             }
           },
           {
@@ -126,14 +384,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 86947625
+              "duration": 69756999
             }
           }
         ],
         "tags": [
           {
             "name": "@demo",
-            "line": 34
+            "line": 30
           }
         ],
         "type": "scenario"
@@ -142,7 +400,7 @@
         "description": "",
         "id": "client-app-action;from-dashboard-page--add-the-product-to-the-cart.",
         "keyword": "Scenario Outline",
-        "line": 35,
+        "line": 31,
         "name": "From dashboard page  add the product to the cart.",
         "steps": [
           {
@@ -150,111 +408,137 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2243273458
+              "duration": 2221114792
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 37,
+            "line": 33,
             "name": "User should be able to open dashboard Page",
             "match": {
-              "location": "steps/demo.steps.ts:50"
+              "location": "steps/demo.steps.ts:53"
             },
             "result": {
               "status": "passed",
-              "duration": 1492660084
+              "duration": 1445178500
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 38,
+            "line": 34,
             "name": "user should be able to add the selected product 'adidas original' to the cart",
             "match": {
-              "location": "steps/demo.steps.ts:56"
+              "location": "steps/demo.steps.ts:59"
             },
             "result": {
               "status": "passed",
-              "duration": 71156250
+              "duration": 62266999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "user can be able to navi to chart page",
+            "match": {
+              "location": "steps/demo.steps.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1525705666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "user check to  the correctness of the product 'adidas original' on the Cart Page",
+            "match": {
+              "location": "steps/demo.steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3478166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "user click checkout button",
+            "match": {
+              "location": "steps/demo.steps.ts:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 183513249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "check to the correctness of the user Email 'busrayusuf@gmail.com' on the Cart Page",
+            "match": {
+              "location": "steps/demo.steps.ts:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5989624
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 39,
-            "name": "user can be able to navi to chart page",
+            "name": "user should be able select 'ind' , 'India' the country",
             "match": {
-              "location": "steps/demo.steps.ts:62"
+              "location": "steps/demo.steps.ts:89"
             },
             "result": {
               "status": "passed",
-              "duration": 1492405958
+              "duration": 697191124
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 40,
-            "name": "user check to  the correctness of the product 'adidas original' on the Cart Page",
+            "name": "user should be able to click place order button and verify the confirmation text",
             "match": {
-              "location": "steps/demo.steps.ts:68"
+              "location": "steps/demo.steps.ts:95"
             },
             "result": {
               "status": "passed",
-              "duration": 3044207
+              "duration": 453005832
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 41,
-            "name": "user click checkout button",
+            "name": "user can be able to navi to orders",
             "match": {
-              "location": "steps/demo.steps.ts:76"
+              "location": "steps/demo.steps.ts:102"
             },
             "result": {
               "status": "passed",
-              "duration": 192941332
+              "duration": 60917874
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 42,
-            "name": "check to the correctness of the user Email 'busrayusuf@gmail.com' on the Cart Page",
+            "name": "user should be able to choose current product on history page and verify it",
             "match": {
-              "location": "steps/demo.steps.ts:80"
+              "location": "steps/demo.steps.ts:108"
             },
             "result": {
               "status": "passed",
-              "duration": 5783250
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 43,
-            "name": "user should be able select 'ind' , 'India' the country",
-            "match": {
-              "location": "steps/demo.steps.ts:86"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 669735665
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 44,
-            "name": "user should be able to click place order button and verify the confirmation text",
-            "match": {
-              "location": "steps/demo.steps.ts:92"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 488051124
+              "duration": 410582499
             }
           },
           {
@@ -262,14 +546,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 96810042
+              "duration": 63953792
             }
           }
         ],
         "tags": [
           {
             "name": "@demo",
-            "line": 34
+            "line": 30
           }
         ],
         "type": "scenario"
@@ -278,7 +562,7 @@
         "description": "",
         "id": "client-app-action;from-dashboard-page--add-the-product-to-the-cart.",
         "keyword": "Scenario Outline",
-        "line": 35,
+        "line": 31,
         "name": "From dashboard page  add the product to the cart.",
         "steps": [
           {
@@ -286,111 +570,137 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2375361334
+              "duration": 2313345625
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 37,
+            "line": 33,
             "name": "User should be able to open dashboard Page",
             "match": {
-              "location": "steps/demo.steps.ts:50"
+              "location": "steps/demo.steps.ts:53"
             },
             "result": {
               "status": "passed",
-              "duration": 1470643874
+              "duration": 1486346791
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 38,
+            "line": 34,
             "name": "user should be able to add the selected product 'iphone 13 pro' to the cart",
             "match": {
-              "location": "steps/demo.steps.ts:56"
+              "location": "steps/demo.steps.ts:59"
             },
             "result": {
               "status": "passed",
-              "duration": 69663458
+              "duration": 58759124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "user can be able to navi to chart page",
+            "match": {
+              "location": "steps/demo.steps.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1521547832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "user check to  the correctness of the product 'iphone 13 pro' on the Cart Page",
+            "match": {
+              "location": "steps/demo.steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2890416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "user click checkout button",
+            "match": {
+              "location": "steps/demo.steps.ts:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 172090917
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "check to the correctness of the user Email 'busrayusuf@gmail.com' on the Cart Page",
+            "match": {
+              "location": "steps/demo.steps.ts:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5866082
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 39,
-            "name": "user can be able to navi to chart page",
+            "name": "user should be able select 'ind' , 'India' the country",
             "match": {
-              "location": "steps/demo.steps.ts:62"
+              "location": "steps/demo.steps.ts:89"
             },
             "result": {
               "status": "passed",
-              "duration": 1517728333
+              "duration": 683383958
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 40,
-            "name": "user check to  the correctness of the product 'iphone 13 pro' on the Cart Page",
+            "name": "user should be able to click place order button and verify the confirmation text",
             "match": {
-              "location": "steps/demo.steps.ts:68"
+              "location": "steps/demo.steps.ts:95"
             },
             "result": {
               "status": "passed",
-              "duration": 3106208
+              "duration": 499438041
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 41,
-            "name": "user click checkout button",
+            "name": "user can be able to navi to orders",
             "match": {
-              "location": "steps/demo.steps.ts:76"
+              "location": "steps/demo.steps.ts:102"
             },
             "result": {
               "status": "passed",
-              "duration": 182853208
+              "duration": 45765707
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 42,
-            "name": "check to the correctness of the user Email 'busrayusuf@gmail.com' on the Cart Page",
+            "name": "user should be able to choose current product on history page and verify it",
             "match": {
-              "location": "steps/demo.steps.ts:80"
+              "location": "steps/demo.steps.ts:108"
             },
             "result": {
               "status": "passed",
-              "duration": 6465124
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 43,
-            "name": "user should be able select 'ind' , 'India' the country",
-            "match": {
-              "location": "steps/demo.steps.ts:86"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 672325334
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 44,
-            "name": "user should be able to click place order button and verify the confirmation text",
-            "match": {
-              "location": "steps/demo.steps.ts:92"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 490106208
+              "duration": 410342166
             }
           },
           {
@@ -398,14 +708,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 80345625
+              "duration": 60275000
             }
           }
         ],
         "tags": [
           {
             "name": "@demo",
-            "line": 34
+            "line": 30
           }
         ],
         "type": "scenario"
