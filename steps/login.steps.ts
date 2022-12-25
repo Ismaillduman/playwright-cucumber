@@ -13,7 +13,7 @@
 
 //   Then('I should see the home page title \'Let\'s Shop\'', async function () {
 //     const loginPage= new LoginPage(page);
-//     await loginPage.dashBoardPageTitleVerify();
+//     await loginPage.dashBoardPageUrlVerify();
 //   });
 
 
