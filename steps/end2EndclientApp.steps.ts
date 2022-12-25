@@ -10,7 +10,7 @@ import { OrdersHistoryPage } from '../page_objects/OrdersHistoryPage';
 
 let orderId:string|null;
 
-
+//Login and see dashboard
 
   Given('I fill the login form with valid {string} and {string}', async function (userName, userpassword) {
     
@@ -23,6 +23,8 @@ let orderId:string|null;
     await loginPage.dashBoardPageTitleVerify();
   });
 
+
+  //Could not login
   Given('I fill the login form with invalid {string} and {string}', async function (userName, userpassword) {
     const loginPage= new LoginPage(page);
     await loginPage.invalidLogin(userName,userpassword);
@@ -35,6 +37,8 @@ let orderId:string|null;
     await loginPage.invalidLoginMessage();
   });
 
+
+  //Dashboard Page
   Given('User should be able to open dashboard Page', async function () {
     const dashboardPage=new DashboardPage(page);
    await dashboardPage.goToDashboardPage();
@@ -56,9 +60,10 @@ let orderId:string|null;
 await dashboardPage.naviToCart();
   });
 
+
+  //Cart Page
   Then('user check to  the correctness of the product {string} on the Cart Page', async function (productName) {
     const cartPage=new CartPage(page);
-    // await page.pause()
     await cartPage.getProductLocator(productName);
     await cartPage.verifyProduct(productName);
   });
@@ -67,6 +72,8 @@ await dashboardPage.naviToCart();
     await cartPage.checkOut();
 
   });
+
+  //Place order Page
   Then('check to the correctness of the user Email {string} on the Cart Page',async function (userName) {
    const placeOrderPage=new PlaceOrderPage(page);
    await placeOrderPage.verifyUserEmail(userName);
@@ -83,7 +90,6 @@ await dashboardPage.naviToCart();
 
   Then('user should be able to click place order button and verify the confirmation text',async function () {
     const placeOrderPage=new PlaceOrderPage(page);
-   // await placeOrderPage.orderConfirmationGetOrderId();
      orderId=await placeOrderPage.orderConfirmationGetOrderId();
 
   });
@@ -95,7 +101,7 @@ await dashboardPage.naviToCart();
   });
 
 
-
+//Order history Page
   Then('user should be able to choose current product on history page and verify it',async function () {
     const ordersHistoryPage= new OrdersHistoryPage(page);
     await ordersHistoryPage.selectOrderId(orderId!);

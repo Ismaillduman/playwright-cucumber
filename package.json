@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cucumber-js -p test_runner --tags @demo & node ./htmlReportGenerator.js"
+    "test": "npx cucumber-js -p test_runner --tags @End2End & node ./htmlReportGenerator.js",
+    "smokeTest":"npx cucumber-js -p test_runner --tags @SmokeTest & node ./htmlReportGenerator.js",
+    "regressionTest":"npx cucumber-js -p test_runner --tags @RegressionTest & node ./htmlReportGenerator.js"
+
+    
+   
   },
   "author": "",
   "license": "ISC",
