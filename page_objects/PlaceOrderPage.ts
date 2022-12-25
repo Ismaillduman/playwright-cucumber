@@ -1,6 +1,4 @@
 import { expect, Locator, Page } from "@playwright/test";
-import { stringify } from "querystring";
-import { text } from "stream/consumers";
 
 export class PlaceOrderPage {
   userEmail: Locator;
@@ -9,7 +7,7 @@ export class PlaceOrderPage {
   dropDown: Locator;
   confirmationText: Locator;
   orderId: Locator;
-  ordersBtn:Locator;
+  ordersBtn: Locator;
   constructor(page: Page) {
     this.userEmail = page.locator(".mt-5 [type='text']").first();
     this.selectCountry = page.locator("[placeholder='Select Country']");
@@ -17,7 +15,7 @@ export class PlaceOrderPage {
     this.dropDown = page.locator(".ta-results");
     this.confirmationText = page.locator(".hero-primary");
     this.orderId = page.locator(".em-spacer-1 .ng-star-inserted");
-    this.ordersBtn=page.locator("button[routerlink='/dashboard/myorders']");
+    this.ordersBtn = page.locator("button[routerlink='/dashboard/myorders']");
   }
 
   async verifyUserEmail(userName: string | RegExp | (string | RegExp)[]) {
@@ -26,7 +24,6 @@ export class PlaceOrderPage {
   }
 
   async userCountry(countrycode: string, countryName: string) {
-
     await this.selectCountry.type(countrycode, { delay: 100 });
     await this.dropDown.waitFor();
     // i create a loop for country options, for that firstly creat a options count
@@ -53,10 +50,10 @@ export class PlaceOrderPage {
     await this.placeOrderBtn.click();
     await expect(this.confirmationText).toHaveText(" Thankyou for the order. ");
     //console.log((await this.orderId.textContent()) + "Order Id");
-    return await this.orderId.textContent();//to use another pages
+    return await this.orderId.textContent(); //to use another pages
   }
 
-  async naviOrders(){
+  async naviOrders() {
     await this.ordersBtn.click();
-}
+  }
 }

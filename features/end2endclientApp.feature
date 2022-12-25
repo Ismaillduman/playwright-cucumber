@@ -1,10 +1,10 @@
 Feature: Client App action
 
   As a user
-  I want to login into application
+  I want to login into application and
 
+  @End2End  @SmokeTest
 
-@demo
   Scenario Outline: Login with valid credentials
 
     Given I fill the login form with valid '<userName>' and '<password>'
@@ -15,7 +15,7 @@ Feature: Client App action
       | busrayusuf@gmail.com | HKNclb8318. |
       | ismaildumann@web.de  | HKNclb8318. |
 
-@demo
+  @End2End  @SmokeTest
   Scenario Outline: User Try to login with invalid credentials
 
     Given I fill the login form with invalid '<userName>' and '<password>'
@@ -27,7 +27,7 @@ Feature: Client App action
       | busrayusuf@gmail.com | abhfkdsjnsömbjos |
 
 
-  @demo
+  @End2End
   Scenario Outline: From dashboard page  add the product to the cart.
 
     Given User should be able to open dashboard Page
@@ -40,14 +40,14 @@ Feature: Client App action
     Then user should be able to click place order button and verify the confirmation text
     Then user can be able to navi to orders
     And user should be able to choose current product on history page and verify it
-    
+
 
 
 
 
 
     Examples:
-      | productName     | userName |
+      | productName     | userName             |
       | zara coat 3     | busrayusuf@gmail.com |
       | adidas original | busrayusuf@gmail.com |
       | iphone 13 pro   | busrayusuf@gmail.com |

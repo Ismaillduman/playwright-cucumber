@@ -19,7 +19,6 @@ export class CartPage {
     const bool = (await this.getProductLocator(productName)).isVisible();
     expect(bool).toBeTruthy();
     console.log(this.getProductLocator(productName));
-    
   }
 
   async checkOut() {
