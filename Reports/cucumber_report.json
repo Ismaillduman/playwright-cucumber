@@ -6,7 +6,7 @@
         "description": "",
         "id": "client-app-action;login-with-valid-credentials",
         "keyword": "Scenario Outline",
-        "line": 8,
+        "line": 6,
         "name": "Login with valid credentials",
         "steps": [
           {
@@ -14,33 +14,33 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2782543833
+              "duration": 2334479000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 10,
+            "line": 7,
             "name": "I fill the login form with valid 'busrayusuf@gmail.com' and 'HKNclb8318.'",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:22"
             },
             "result": {
               "status": "passed",
-              "duration": 1477443542
+              "duration": 1482728500
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
+            "line": 8,
             "name": "I should see the home page title 'Let's Shop'",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:28"
             },
             "result": {
               "status": "passed",
-              "duration": 14207458
+              "duration": 14539749
             }
           },
           {
@@ -48,18 +48,18 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 69726540
+              "duration": 80294166
             }
           }
         ],
         "tags": [
           {
             "name": "@End2End",
-            "line": 6
+            "line": 5
           },
           {
             "name": "@SmokeTest",
-            "line": 6
+            "line": 5
           }
         ],
         "type": "scenario"
@@ -68,7 +68,7 @@
         "description": "",
         "id": "client-app-action;login-with-valid-credentials",
         "keyword": "Scenario Outline",
-        "line": 8,
+        "line": 6,
         "name": "Login with valid credentials",
         "steps": [
           {
@@ -76,33 +76,33 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3341358417
+              "duration": 2277582374
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 10,
+            "line": 7,
             "name": "I fill the login form with valid 'ismaildumann@web.de' and 'HKNclb8318.'",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:22"
             },
             "result": {
               "status": "passed",
-              "duration": 1482500291
+              "duration": 1524263917
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
+            "line": 8,
             "name": "I should see the home page title 'Let's Shop'",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:28"
             },
             "result": {
               "status": "passed",
-              "duration": 14583750
+              "duration": 15730999
             }
           },
           {
@@ -110,18 +110,18 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 62087875
+              "duration": 72130625
             }
           }
         ],
         "tags": [
           {
             "name": "@End2End",
-            "line": 6
+            "line": 5
           },
           {
             "name": "@SmokeTest",
-            "line": 6
+            "line": 5
           }
         ],
         "type": "scenario"
@@ -130,7 +130,7 @@
         "description": "",
         "id": "client-app-action;user-try-to-login-with-invalid-credentials",
         "keyword": "Scenario Outline",
-        "line": 19,
+        "line": 16,
         "name": "User Try to login with invalid credentials",
         "steps": [
           {
@@ -138,33 +138,33 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2110697875
+              "duration": 2265775249
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 21,
+            "line": 17,
             "name": "I fill the login form with invalid 'buusuf@gmail.com' and 'HKNclb8318.'",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 718436666
+              "duration": 697583083
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 22,
+            "line": 18,
             "name": "I should not see the home page title 'Let's Shop'",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:41"
             },
             "result": {
               "status": "passed",
-              "duration": 17516832
+              "duration": 12324874
             }
           },
           {
@@ -172,18 +172,18 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 71610166
+              "duration": 71434082
             }
           }
         ],
         "tags": [
           {
             "name": "@End2End",
-            "line": 18
+            "line": 15
           },
           {
             "name": "@SmokeTest",
-            "line": 18
+            "line": 15
           }
         ],
         "type": "scenario"
@@ -192,7 +192,7 @@
         "description": "",
         "id": "client-app-action;user-try-to-login-with-invalid-credentials",
         "keyword": "Scenario Outline",
-        "line": 19,
+        "line": 16,
         "name": "User Try to login with invalid credentials",
         "steps": [
           {
@@ -200,33 +200,33 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2286882166
+              "duration": 2383982958
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 21,
+            "line": 17,
             "name": "I fill the login form with invalid 'busrayusuf@gmail.com' and 'abhfkdsjnsömbjos'",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 777579374
+              "duration": 794853624
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 22,
+            "line": 18,
             "name": "I should not see the home page title 'Let's Shop'",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:41"
             },
             "result": {
               "status": "passed",
-              "duration": 11097415
+              "duration": 8694667
             }
           },
           {
@@ -234,18 +234,18 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 73997082
+              "duration": 66570375
             }
           }
         ],
         "tags": [
           {
             "name": "@End2End",
-            "line": 18
+            "line": 15
           },
           {
             "name": "@SmokeTest",
-            "line": 18
+            "line": 15
           }
         ],
         "type": "scenario"
@@ -254,7 +254,7 @@
         "description": "",
         "id": "client-app-action;from-dashboard-page--add-the-product-to-the-cart.",
         "keyword": "Scenario Outline",
-        "line": 31,
+        "line": 26,
         "name": "From dashboard page  add the product to the cart.",
         "steps": [
           {
@@ -262,137 +262,137 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2127304749
+              "duration": 2256979958
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 33,
+            "line": 27,
             "name": "User should be able to open dashboard Page",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:48"
             },
             "result": {
               "status": "passed",
-              "duration": 1419987459
+              "duration": 1453482084
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 34,
+            "line": 28,
             "name": "user should be able to add the selected product 'zara coat 3' to the cart",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:54"
             },
             "result": {
               "status": "passed",
-              "duration": 48731792
+              "duration": 59320749
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 35,
+            "line": 29,
             "name": "user can be able to navi to chart page",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:60"
             },
             "result": {
               "status": "passed",
-              "duration": 2018805292
+              "duration": 1474643417
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 36,
+            "line": 30,
             "name": "user check to  the correctness of the product 'zara coat 3' on the Cart Page",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:67"
             },
             "result": {
               "status": "passed",
-              "duration": 4402958
+              "duration": 4963583
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 37,
+            "line": 31,
             "name": "user click checkout button",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:74"
             },
             "result": {
               "status": "passed",
-              "duration": 184645707
+              "duration": 168438165
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 38,
+            "line": 32,
             "name": "check to the correctness of the user Email 'busrayusuf@gmail.com' on the Cart Page",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:79"
             },
             "result": {
               "status": "passed",
-              "duration": 7841750
+              "duration": 6593750
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 39,
+            "line": 33,
             "name": "user should be able select 'ind' , 'India' the country",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:85"
             },
             "result": {
               "status": "passed",
-              "duration": 667378790
+              "duration": 676685083
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 40,
+            "line": 34,
             "name": "user should be able to click place order button and verify the confirmation text",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:91"
             },
             "result": {
               "status": "passed",
-              "duration": 398208957
+              "duration": 611575333
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 41,
+            "line": 35,
             "name": "user can be able to navi to orders",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:97"
             },
             "result": {
               "status": "passed",
-              "duration": 41504124
+              "duration": 51779833
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 42,
+            "line": 36,
             "name": "user should be able to choose current product on history page and verify it",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:104"
             },
             "result": {
               "status": "passed",
-              "duration": 403162417
+              "duration": 377497124
             }
           },
           {
@@ -400,14 +400,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 73395041
+              "duration": 77200249
             }
           }
         ],
         "tags": [
           {
             "name": "@End2End",
-            "line": 30
+            "line": 25
           }
         ],
         "type": "scenario"
@@ -416,7 +416,7 @@
         "description": "",
         "id": "client-app-action;from-dashboard-page--add-the-product-to-the-cart.",
         "keyword": "Scenario Outline",
-        "line": 31,
+        "line": 26,
         "name": "From dashboard page  add the product to the cart.",
         "steps": [
           {
@@ -424,137 +424,137 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2237824459
+              "duration": 2370823459
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 33,
+            "line": 27,
             "name": "User should be able to open dashboard Page",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:48"
             },
             "result": {
               "status": "passed",
-              "duration": 1461271792
+              "duration": 1457617499
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 34,
+            "line": 28,
             "name": "user should be able to add the selected product 'adidas original' to the cart",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:54"
             },
             "result": {
               "status": "passed",
-              "duration": 68110166
+              "duration": 69934957
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 35,
+            "line": 29,
             "name": "user can be able to navi to chart page",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:60"
             },
             "result": {
               "status": "passed",
-              "duration": 1500768500
+              "duration": 1507030333
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 36,
+            "line": 30,
             "name": "user check to  the correctness of the product 'adidas original' on the Cart Page",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:67"
             },
             "result": {
               "status": "passed",
-              "duration": 3203125
+              "duration": 3106791
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 37,
+            "line": 31,
             "name": "user click checkout button",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:74"
             },
             "result": {
               "status": "passed",
-              "duration": 183215290
+              "duration": 177327375
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 38,
+            "line": 32,
             "name": "check to the correctness of the user Email 'busrayusuf@gmail.com' on the Cart Page",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:79"
             },
             "result": {
               "status": "passed",
-              "duration": 7124332
+              "duration": 7051458
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 39,
-            "name": "user should be able select 'ind' , 'India' the country",
+            "line": 33,
+            "name": "user should be able select 'ger' , 'Germany' the country",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:85"
             },
             "result": {
               "status": "passed",
-              "duration": 687245374
+              "duration": 686531624
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 40,
+            "line": 34,
             "name": "user should be able to click place order button and verify the confirmation text",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:91"
             },
             "result": {
               "status": "passed",
-              "duration": 486613334
+              "duration": 436971459
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 41,
+            "line": 35,
             "name": "user can be able to navi to orders",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:97"
             },
             "result": {
               "status": "passed",
-              "duration": 43946457
+              "duration": 37118666
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 42,
+            "line": 36,
             "name": "user should be able to choose current product on history page and verify it",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:104"
             },
             "result": {
               "status": "passed",
-              "duration": 390024875
+              "duration": 361278292
             }
           },
           {
@@ -562,14 +562,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 74909416
+              "duration": 69280665
             }
           }
         ],
         "tags": [
           {
             "name": "@End2End",
-            "line": 30
+            "line": 25
           }
         ],
         "type": "scenario"
@@ -578,7 +578,7 @@
         "description": "",
         "id": "client-app-action;from-dashboard-page--add-the-product-to-the-cart.",
         "keyword": "Scenario Outline",
-        "line": 31,
+        "line": 26,
         "name": "From dashboard page  add the product to the cart.",
         "steps": [
           {
@@ -586,137 +586,137 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2260721291
+              "duration": 2338636916
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 33,
+            "line": 27,
             "name": "User should be able to open dashboard Page",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:48"
             },
             "result": {
               "status": "passed",
-              "duration": 1448110249
+              "duration": 1433021832
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 34,
+            "line": 28,
             "name": "user should be able to add the selected product 'iphone 13 pro' to the cart",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:54"
             },
             "result": {
               "status": "passed",
-              "duration": 61209459
+              "duration": 73592999
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 35,
+            "line": 29,
             "name": "user can be able to navi to chart page",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:60"
             },
             "result": {
               "status": "passed",
-              "duration": 1499156207
+              "duration": 1552424874
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 36,
+            "line": 30,
             "name": "user check to  the correctness of the product 'iphone 13 pro' on the Cart Page",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:67"
             },
             "result": {
               "status": "passed",
-              "duration": 3938542
+              "duration": 3598584
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 37,
+            "line": 31,
             "name": "user click checkout button",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:74"
             },
             "result": {
               "status": "passed",
-              "duration": 184607708
+              "duration": 183058167
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 38,
+            "line": 32,
             "name": "check to the correctness of the user Email 'busrayusuf@gmail.com' on the Cart Page",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:79"
             },
             "result": {
               "status": "passed",
-              "duration": 5681582
+              "duration": 6260125
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 39,
-            "name": "user should be able select 'ind' , 'India' the country",
+            "line": 33,
+            "name": "user should be able select 'Be' , 'Belgium' the country",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:85"
             },
             "result": {
               "status": "passed",
-              "duration": 672105917
+              "duration": 586748375
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 40,
+            "line": 34,
             "name": "user should be able to click place order button and verify the confirmation text",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:91"
             },
             "result": {
               "status": "passed",
-              "duration": 506726999
+              "duration": 635296709
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 41,
+            "line": 35,
             "name": "user can be able to navi to orders",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:97"
             },
             "result": {
               "status": "passed",
-              "duration": 56200250
+              "duration": 44167917
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 42,
+            "line": 36,
             "name": "user should be able to choose current product on history page and verify it",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:104"
             },
             "result": {
               "status": "passed",
-              "duration": 378605999
+              "duration": 386906209
             }
           },
           {
@@ -724,14 +724,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 60967542
+              "duration": 66854125
             }
           }
         ],
         "tags": [
           {
             "name": "@End2End",
-            "line": 30
+            "line": 25
           }
         ],
         "type": "scenario"
