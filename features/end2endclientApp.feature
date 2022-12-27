@@ -25,7 +25,7 @@ Feature: Client App action
   @End2End
   Scenario Outline: From dashboard page  add the product to the cart.
     Given User should be able to open dashboard Page
-    When user should be able to add the selected product '<productName>' to the cart
+    When user add to the selected product '<productName>' to the cart
     Then user can be able to navi to chart page
     Then user check to  the correctness of the product '<productName>' on the Cart Page
     Then user click checkout button
