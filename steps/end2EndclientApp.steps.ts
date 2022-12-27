@@ -44,7 +44,7 @@ Given("User should be able to open dashboard Page", async function () {
 });
 
 When(
-  "user should be able to add the selected product {string} to the cart",
+  "user add to the selected product {string} to the cart",
   async function (productName: string) {
     const dashboardPage = new DashboardPage(page);
     await dashboardPage.addProduct(productName);
