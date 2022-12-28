@@ -18,9 +18,9 @@ Feature: Client App action
     Then I should not see the home page title 'Let's Shop'
 
     Examples: 
-      | userName             | password         |
-      | buusuf@gmail.com     | HKNclb8318.      |
-      | busrayusuf@gmail.com | abhfkdsjnsömbjos |
+      | userName             | password    |
+      | buusuf@gmail.com     | HKNclb8318. |
+      | busrayusuf@gmail.com | HKNclb8318. |
 
   @End2End
   Scenario Outline: From dashboard page  add the product to the cart.
