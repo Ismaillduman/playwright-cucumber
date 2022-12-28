@@ -8,8 +8,8 @@ var options= {
     
     brandTitle:"Client App Test Scenarious",
     theme: "bootstrap",
-    jsonFile: 'Reports/cucumber_report.json',
-    output: 'Reports/cucumber_report_'+currentDate+'.html',
+    jsonFile: 'test-results/cucumber_report.json',
+    output: 'test-results/cucumber_report_'+currentDate+'.html',
     screenshotDirectory:'./Screenshots/',
     storeScreenshots: true,
     launchReport:true,
