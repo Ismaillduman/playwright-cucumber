@@ -18,7 +18,7 @@ Given(
   }
 );
 
-Then("I should see the home page title 'Let's Shop'", async function () {
+Then("I should see the home page title 'Let's Shop' and new URL", async function () {
   const loginPage = new LoginPage(page);
   await loginPage.dashBoardPageUrlVerify();
 });
@@ -32,7 +32,7 @@ Given(
   }
 );
 
-Then("I should not see the home page title 'Let's Shop'", async function () {
+Then("I should not go to the dashboard Page", async function () {
   const loginPage = new LoginPage(page);
   await loginPage.invalidLoginMessage();
 });

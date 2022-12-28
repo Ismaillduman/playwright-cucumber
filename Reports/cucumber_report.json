@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2344475083
+              "duration": 2372034959
             }
           },
           {
@@ -27,20 +27,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1507515124
+              "duration": 1553372250
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "I should see the home page title 'Let's Shop'",
+            "name": "I should see the home page title 'Let's Shop' and new URL",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:28"
             },
             "result": {
               "status": "passed",
-              "duration": 25271750
+              "duration": 24157625
             }
           },
           {
@@ -48,7 +48,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 76156041
+              "duration": 83617082
             }
           }
         ],
@@ -76,7 +76,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2159243749
+              "duration": 2266592749
             }
           },
           {
@@ -89,20 +89,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1482811999
+              "duration": 1453898000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "I should see the home page title 'Let's Shop'",
+            "name": "I should see the home page title 'Let's Shop' and new URL",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:28"
             },
             "result": {
               "status": "passed",
-              "duration": 19248875
+              "duration": 18344500
             }
           },
           {
@@ -110,7 +110,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 79654249
+              "duration": 71323790
             }
           }
         ],
@@ -138,7 +138,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2328237790
+              "duration": 2262010000
             }
           },
           {
@@ -151,20 +151,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 726300708
+              "duration": 721166875
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
-            "name": "I should not see the home page title 'Let's Shop'",
+            "name": "I should not go to the dashboard Page",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:41"
             },
             "result": {
               "status": "passed",
-              "duration": 25680709
+              "duration": 8878167
             }
           },
           {
@@ -172,7 +172,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 73902791
+              "duration": 62530291
             }
           }
         ],
@@ -200,7 +200,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2436545249
+              "duration": 2339871208
             }
           },
           {
@@ -213,20 +213,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 821910291
+              "duration": 793621915
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
-            "name": "I should not see the home page title 'Let's Shop'",
+            "name": "I should not go to the dashboard Page",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:41"
             },
             "result": {
               "status": "passed",
-              "duration": 17400916
+              "duration": 15042082
             }
           },
           {
@@ -234,7 +234,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 85827459
+              "duration": 82585333
             }
           }
         ],
@@ -262,7 +262,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2303862709
+              "duration": 2417958499
             }
           },
           {
@@ -275,7 +275,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1524145833
+              "duration": 1454973333
             }
           },
           {
@@ -288,7 +288,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 78899958
+              "duration": 80104333
             }
           },
           {
@@ -301,7 +301,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1528702416
+              "duration": 1525422249
             }
           },
           {
@@ -314,7 +314,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5728333
+              "duration": 2875124
             }
           },
           {
@@ -327,7 +327,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 175536874
+              "duration": 186490374
             }
           },
           {
@@ -340,7 +340,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8191000
+              "duration": 6628833
             }
           },
           {
@@ -353,7 +353,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 713557082
+              "duration": 690279500
             }
           },
           {
@@ -366,7 +366,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 399461500
+              "duration": 436658416
             }
           },
           {
@@ -379,7 +379,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 42522957
+              "duration": 68822249
             }
           },
           {
@@ -392,7 +392,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 403362666
+              "duration": 334717541
             }
           },
           {
@@ -400,7 +400,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 74924292
+              "duration": 60058583
             }
           }
         ],
@@ -424,7 +424,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2321220666
+              "duration": 2251748875
             }
           },
           {
@@ -437,7 +437,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1477852124
+              "duration": 1540455124
             }
           },
           {
@@ -450,7 +450,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 81083209
+              "duration": 73277624
             }
           },
           {
@@ -463,7 +463,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1509233833
+              "duration": 1514982709
             }
           },
           {
@@ -476,7 +476,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2929082
+              "duration": 3087165
             }
           },
           {
@@ -489,7 +489,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 190314999
+              "duration": 185659249
             }
           },
           {
@@ -502,7 +502,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6086333
+              "duration": 7495708
             }
           },
           {
@@ -515,7 +515,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 688500707
+              "duration": 687419082
             }
           },
           {
@@ -528,7 +528,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 445145750
+              "duration": 433896750
             }
           },
           {
@@ -541,7 +541,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 56718584
+              "duration": 42044167
             }
           },
           {
@@ -554,7 +554,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 375028125
+              "duration": 357470165
             }
           },
           {
@@ -562,7 +562,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 77782749
+              "duration": 62510499
             }
           }
         ],
@@ -586,7 +586,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2258679125
+              "duration": 2425937374
             }
           },
           {
@@ -599,7 +599,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1470532250
+              "duration": 1452178499
             }
           },
           {
@@ -612,7 +612,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 63076291
+              "duration": 56824834
             }
           },
           {
@@ -625,7 +625,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1515603624
+              "duration": 1527907624
             }
           },
           {
@@ -638,7 +638,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3068083
+              "duration": 2814625
             }
           },
           {
@@ -651,7 +651,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 185383958
+              "duration": 189505250
             }
           },
           {
@@ -664,7 +664,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5919583
+              "duration": 5830334
             }
           },
           {
@@ -677,7 +677,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 579415874
+              "duration": 590108333
             }
           },
           {
@@ -690,7 +690,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 619991332
+              "duration": 620098958
             }
           },
           {
@@ -703,7 +703,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 49393167
+              "duration": 40228040
             }
           },
           {
@@ -716,7 +716,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 394776291
+              "duration": 397982167
             }
           },
           {
@@ -724,7 +724,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 57770833
+              "duration": 71874292
             }
           }
         ],

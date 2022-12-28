@@ -41,6 +41,7 @@ export class LoginPage {
   await this.email.type(userName);
   await this.password.fill(userpassword);
   await this.signInbutton.click();
+  await expect(this.page).toHaveURL('https://rahulshettyacademy.com/client/auth/login');
   await this.page.waitForLoadState("networkidle");
   
  
