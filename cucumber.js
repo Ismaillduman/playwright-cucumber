@@ -4,7 +4,7 @@ let options=[
     '--require ./steps/*.steps.ts',
     '--format progress-bar',
     '--publish-quiet',
-    '--format json:./Reports/cucumber_report.json',
+    '--format json:./test-results/cucumber_report.json',
 ].join(' ');
 
 let run_features= [
