@@ -1,5 +1,752 @@
 [
   {
+    "description": "    As a user I want to login with valid credentials into application and not login invalid credentials",
+    "elements": [
+      {
+        "description": "",
+        "id": "client-app-login;login-with-valid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 6,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2745002375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I fill the login form with valid 'busrayusuf@gmail.com' and 'HKNclb8318.'",
+            "match": {
+              "location": "steps/login.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1559982124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see the home page title 'Let's Shop'",
+            "match": {
+              "location": "steps/login.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13827334
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 72895374
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest",
+            "line": 5
+          },
+          {
+            "name": "@regression",
+            "line": 5
+          },
+          {
+            "name": "@login",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "client-app-login;login-with-valid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 6,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2214256416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I fill the login form with valid 'ismaildumann@web.de' and 'HKNclb8318.'",
+            "match": {
+              "location": "steps/login.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1448436290
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see the home page title 'Let's Shop'",
+            "match": {
+              "location": "steps/login.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16513333
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 75515082
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest",
+            "line": 5
+          },
+          {
+            "name": "@regression",
+            "line": 5
+          },
+          {
+            "name": "@login",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "client-app-login;user-try-to-login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "User Try to login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2247625958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I fill the login form with invalid 'buusuf@gmail.com' and 'HKNclb8318.'",
+            "match": {
+              "location": "steps/login.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 716897166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should not go to the dashboard Page",
+            "match": {
+              "location": "steps/login.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12802917
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 69575708
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest",
+            "line": 15
+          },
+          {
+            "name": "@regression",
+            "line": 15
+          },
+          {
+            "name": "@login",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "client-app-login;user-try-to-login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "User Try to login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2126324291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I fill the login form with invalid 'busrayusuf@gmail.com' and 'HKNclb8318'",
+            "match": {
+              "location": "steps/login.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 878528249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should not go to the dashboard Page",
+            "match": {
+              "location": "steps/login.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5956874
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 65845124
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest",
+            "line": 15
+          },
+          {
+            "name": "@regression",
+            "line": 15
+          },
+          {
+            "name": "@login",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "client-app-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Client App Login",
+    "tags": [],
+    "uri": "features/account-suite/login.feature"
+  },
+  {
+    "description": "    Feature Description:",
+    "elements": [
+      {
+        "description": "",
+        "id": "cart-page;from-dashboard-page--add-the-product-to-the-cart.",
+        "keyword": "Scenario Outline",
+        "line": 5,
+        "name": "From dashboard page  add the product to the cart.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2423679042
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "user logged with 'busrayusuf@gmail.com', 'HKNclb8318.' and a 'zara coat 3' inside the cart.",
+            "match": {
+              "location": "steps/cartPage.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3041155499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user check to  the correctness of the product 'zara coat 3' on the Cart Page",
+            "match": {
+              "location": "steps/cartPage.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4040207
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "user click checkout button",
+            "match": {
+              "location": "steps/cartPage.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 182906499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 67258958
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 4
+          },
+          {
+            "name": "@Cart",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cart-page;from-dashboard-page--add-the-product-to-the-cart.",
+        "keyword": "Scenario Outline",
+        "line": 5,
+        "name": "From dashboard page  add the product to the cart.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2419954082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "user logged with 'busrayusuf@gmail.com', 'HKNclb8318.' and a 'adidas original' inside the cart.",
+            "match": {
+              "location": "steps/cartPage.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3120437458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user check to  the correctness of the product 'adidas original' on the Cart Page",
+            "match": {
+              "location": "steps/cartPage.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2964333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "user click checkout button",
+            "match": {
+              "location": "steps/cartPage.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 169639708
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 64434833
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 4
+          },
+          {
+            "name": "@Cart",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cart-page;from-dashboard-page--add-the-product-to-the-cart.",
+        "keyword": "Scenario Outline",
+        "line": 5,
+        "name": "From dashboard page  add the product to the cart.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2432223416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "user logged with 'busrayusuf@gmail.com', 'HKNclb8318.' and a 'iphone 13 pro' inside the cart.",
+            "match": {
+              "location": "steps/cartPage.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3094934874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user check to  the correctness of the product 'iphone 13 pro' on the Cart Page",
+            "match": {
+              "location": "steps/cartPage.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2949041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "user click checkout button",
+            "match": {
+              "location": "steps/cartPage.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188673999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 60351416
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 4
+          },
+          {
+            "name": "@Cart",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "cart-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Cart page",
+    "tags": [],
+    "uri": "features/cartPage.feature"
+  },
+  {
+    "description": "    Feature Description: user should be able to add the selected product  to the cart",
+    "elements": [
+      {
+        "description": "",
+        "id": "dashboard-page;from-dashboard-page--add-the-product-to-the-cart.",
+        "keyword": "Scenario Outline",
+        "line": 5,
+        "name": "From dashboard page  add the product to the cart.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2288986207
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User should be able to open dashboard Page",
+            "match": {
+              "location": "steps/dashboard.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6038186332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user should be able to add the selected product 'zara coat 3' to the cart",
+            "match": {
+              "location": "steps/dashboard.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3581977500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user can be able to navi to chart page",
+            "match": {
+              "location": "steps/dashboard.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1825344666
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 116229208
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 4
+          },
+          {
+            "name": "@dashboard",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dashboard-page;from-dashboard-page--add-the-product-to-the-cart.",
+        "keyword": "Scenario Outline",
+        "line": 5,
+        "name": "From dashboard page  add the product to the cart.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2442961834
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User should be able to open dashboard Page",
+            "match": {
+              "location": "steps/dashboard.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2528746791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user should be able to add the selected product 'adidas original' to the cart",
+            "match": {
+              "location": "steps/dashboard.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5686184458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user can be able to navi to chart page",
+            "match": {
+              "location": "steps/dashboard.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2579359957
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 84570459
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 4
+          },
+          {
+            "name": "@dashboard",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dashboard-page;from-dashboard-page--add-the-product-to-the-cart.",
+        "keyword": "Scenario Outline",
+        "line": 5,
+        "name": "From dashboard page  add the product to the cart.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2400501792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User should be able to open dashboard Page",
+            "match": {
+              "location": "steps/dashboard.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2669953957
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user should be able to add the selected product 'iphone 13 pro' to the cart",
+            "match": {
+              "location": "steps/dashboard.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7009943166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user can be able to navi to chart page",
+            "match": {
+              "location": "steps/dashboard.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1943826374
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 89760499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 4
+          },
+          {
+            "name": "@dashboard",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "dashboard-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Dashboard Page",
+    "tags": [],
+    "uri": "features/dashboardPage.feature"
+  },
+  {
     "description": "    Feature Description: user should be able to choose current product on history page and verify it",
     "elements": [
       {
@@ -14,7 +761,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2468913584
+              "duration": 2447686499
             }
           },
           {
@@ -27,7 +774,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4470796291
+              "duration": 4446052415
             }
           },
           {
@@ -40,7 +787,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 413194583
+              "duration": 386647959
             }
           },
           {
@@ -48,7 +795,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 75020083
+              "duration": 60186291
             }
           }
         ],
@@ -76,7 +823,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2274180500
+              "duration": 2407358625
             }
           },
           {
@@ -89,7 +836,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4421300208
+              "duration": 4452380084
             }
           },
           {
@@ -102,7 +849,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 364453791
+              "duration": 400631791
             }
           },
           {
@@ -110,7 +857,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 99145082
+              "duration": 65339208
             }
           }
         ],
@@ -138,7 +885,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2287487082
+              "duration": 2405002042
             }
           },
           {
@@ -151,7 +898,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4464319292
+              "duration": 4485748416
             }
           },
           {
@@ -164,7 +911,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 382057291
+              "duration": 390052250
             }
           },
           {
@@ -172,7 +919,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 60460166
+              "duration": 70232750
             }
           }
         ],
@@ -195,5 +942,319 @@
     "name": "Order history page",
     "tags": [],
     "uri": "features/orderHistoryPage.feature"
+  },
+  {
+    "description": "    Feature Description: verify user mail and select to the country",
+    "elements": [
+      {
+        "description": "",
+        "id": "place-order-page;from-dashboard-page--add-the-product-to-the-cart.",
+        "keyword": "Scenario Outline",
+        "line": 5,
+        "name": "From dashboard page  add the product to the cart.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2258424750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user logged with 'busrayusuf@gmail.com', 'HKNclb8318.' and add a product 'zara coat 3' inside the cart",
+            "match": {
+              "location": "steps/placeOrderPage.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3209186458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "check to the correctness of the user Email 'busrayusuf@gmail.com' on the Cart Page",
+            "match": {
+              "location": "steps/placeOrderPage.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6249624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user should be able select 'ind' , 'India' the country",
+            "match": {
+              "location": "steps/placeOrderPage.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 683260624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user should be able to click place order button and verify the confirmation text 'Thankyou for the order.'",
+            "match": {
+              "location": "steps/placeOrderPage.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 487798624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user can be able to navi to orders",
+            "match": {
+              "location": "steps/placeOrderPage.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61652332
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 69317333
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 4
+          },
+          {
+            "name": "@placeOrder",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "place-order-page;from-dashboard-page--add-the-product-to-the-cart.",
+        "keyword": "Scenario Outline",
+        "line": 5,
+        "name": "From dashboard page  add the product to the cart.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2448446792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user logged with 'busrayusuf@gmail.com', 'HKNclb8318.' and add a product 'adidas original' inside the cart",
+            "match": {
+              "location": "steps/placeOrderPage.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3238324958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "check to the correctness of the user Email 'busrayusuf@gmail.com' on the Cart Page",
+            "match": {
+              "location": "steps/placeOrderPage.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11252000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user should be able select 'ger' , 'Germany' the country",
+            "match": {
+              "location": "steps/placeOrderPage.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 681711124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user should be able to click place order button and verify the confirmation text 'Thankyou for the order.'",
+            "match": {
+              "location": "steps/placeOrderPage.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 485890791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user can be able to navi to orders",
+            "match": {
+              "location": "steps/placeOrderPage.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41998334
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 61552000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 4
+          },
+          {
+            "name": "@placeOrder",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "place-order-page;from-dashboard-page--add-the-product-to-the-cart.",
+        "keyword": "Scenario Outline",
+        "line": 5,
+        "name": "From dashboard page  add the product to the cart.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2469757999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user logged with 'busrayusuf@gmail.com', 'HKNclb8318.' and add a product 'iphone 13 pro' inside the cart",
+            "match": {
+              "location": "steps/placeOrderPage.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3245067749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "check to the correctness of the user Email 'busrayusuf@gmail.com' on the Cart Page",
+            "match": {
+              "location": "steps/placeOrderPage.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6268665
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user should be able select 'Be' , 'Belgium' the country",
+            "match": {
+              "location": "steps/placeOrderPage.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 572315624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user should be able to click place order button and verify the confirmation text 'Thankyou for the order.'",
+            "match": {
+              "location": "steps/placeOrderPage.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 636103624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user can be able to navi to orders",
+            "match": {
+              "location": "steps/placeOrderPage.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39030000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 62600374
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 4
+          },
+          {
+            "name": "@placeOrder",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "place-order-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Place Order page",
+    "tags": [],
+    "uri": "features/placeOrderPage.feature"
   }
 ]
