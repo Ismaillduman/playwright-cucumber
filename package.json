@@ -2,13 +2,18 @@
   "name": "playwright-cucumber",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "npx cucumber-js -p test_runner --tags @End2End & node ./htmlReportGenerator.js",
-    "smokeTest":"npx cucumber-js -p test_runner --tags @SmokeTest & node ./htmlReportGenerator.js",
-    "regressionTest":"npx cucumber-js -p test_runner --tags @RegressionTest & node ./htmlReportGenerator.js"
+    "test": "npx cucumber-js -p test_runner --tags @End2End & ts-node ./htmlReportGenerator.ts",
+    "smokeTest":"npx cucumber-js -p test_runner --tags @SmokeTest & ts-node ./htmlReportGenerator.ts",
+    "regression":"npx cucumber-js -p test_runner --tags @regression & ts-node ./htmlReportGenerator.ts",
+    "history":"npx cucumber-js -p test_runner --tags @history & ts-node ./htmlReportGenerator.ts",
+    "login":"npx cucumber-js -p test_runner --tags @login & ts-node ./htmlReportGenerator.ts",
+    "dashboard":"npx cucumber-js -p test_runner --tags @dashboard & ts-node ./htmlReportGenerator.ts",
+    "cart":"npx cucumber-js -p test_runner --tags @Cart & ts-node ./htmlReportGenerator.ts",
+    "placeOrder":"npx cucumber-js -p test_runner --tags @placeOrder & ts-node ./htmlReportGenerator.ts"
 
-    
+
    
   },
   "author": "",

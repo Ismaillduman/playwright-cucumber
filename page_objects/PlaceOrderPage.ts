@@ -46,9 +46,9 @@ export class PlaceOrderPage {
     }
   }
 
-  async orderConfirmationGetOrderId() {
+  async orderConfirmationGetOrderId(expectedText:string) {
     await this.placeOrderBtn.click();
-    await expect(this.confirmationText).toHaveText(" Thankyou for the order. ");
+    await expect(this.confirmationText).toHaveText(expectedText);
     //console.log((await this.orderId.textContent()) + "Order Id");
     return await this.orderId.textContent(); //to use another pages
   }
