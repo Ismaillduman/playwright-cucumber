@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2901736459
+              "duration": 2222965208
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1483297708
+              "duration": 1484801665
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16880958
+              "duration": 18422499
             }
           },
           {
@@ -48,7 +48,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 78264792
+              "duration": 74546667
             }
           }
         ],
@@ -76,7 +76,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2421508791
+              "duration": 2374712458
             }
           },
           {
@@ -89,7 +89,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1507171040
+              "duration": 1459872166
             }
           },
           {
@@ -102,7 +102,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16419166
+              "duration": 14418208
             }
           },
           {
@@ -110,7 +110,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 73183332
+              "duration": 72559750
             }
           }
         ],
@@ -138,7 +138,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2145481541
+              "duration": 2306051709
             }
           },
           {
@@ -151,20 +151,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 703396292
+              "duration": 715943709
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
-            "name": "I should not see the home page title 'Let's Shop'",
+            "name": "I should not go to the dashboard Page",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:41"
             },
             "result": {
               "status": "passed",
-              "duration": 13754624
+              "duration": 20669750
             }
           },
           {
@@ -172,7 +172,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 72312832
+              "duration": 81374000
             }
           }
         ],
@@ -200,7 +200,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2402491125
+              "duration": 2224553709
             }
           },
           {
@@ -213,20 +213,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1482760250
+              "duration": 1463836749
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
-            "name": "I should not see the home page title 'Let's Shop'",
+            "name": "I should not go to the dashboard Page",
             "match": {
               "location": "steps/end2EndclientApp.steps.ts:41"
             },
             "result": {
               "status": "failed",
-              "duration": 5015681999,
+              "duration": 5013692083,
               "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"https://rahulshettyacademy.com/client/\u001b[7mauth/login\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"https://rahulshettyacademy.com/client/\u001b[7mdashboard/dash\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://rahulshettyacademy.com/client/dashboard/dash\"\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://rahulshettyacademy.com/client/dashboard/dash\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://rahulshettyacademy.com/client/dashboard/dash\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://rahulshettyacademy.com/client/dashboard/dash\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://rahulshettyacademy.com/client/dashboard/dash\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://rahulshettyacademy.com/client/dashboard/dash\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://rahulshettyacademy.com/client/dashboard/dash\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://rahulshettyacademy.com/client/dashboard/dash\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://rahulshettyacademy.com/client/dashboard/dash\"\u001b[22m\n\n    at Proxy.<anonymous> (/Users/ismailduman/Desktop/playwright-cucumber/node_modules/@playwright/test/lib/expect.js:130:37)\n    at LoginPage.<anonymous> (/Users/ismailduman/Desktop/playwright-cucumber/page_objects/LoginPage.ts:46:49)\n    at /Users/ismailduman/Desktop/playwright-cucumber/page_objects/LoginPage.ts:8:71\n    at __awaiter (/Users/ismailduman/Desktop/playwright-cucumber/page_objects/LoginPage.ts:4:12)\n    at LoginPage.invalidLoginMessage (/Users/ismailduman/Desktop/playwright-cucumber/page_objects/LoginPage.ts:45:16)\n    at World.<anonymous> (/Users/ismailduman/Desktop/playwright-cucumber/steps/end2EndclientApp.steps.ts:44:25)\n    at /Users/ismailduman/Desktop/playwright-cucumber/steps/end2EndclientApp.steps.ts:8:71\n    at __awaiter (/Users/ismailduman/Desktop/playwright-cucumber/steps/end2EndclientApp.steps.ts:4:12)\n    at World.<anonymous> (/Users/ismailduman/Desktop/playwright-cucumber/steps/end2EndclientApp.steps.ts:42:12)"
             }
           },
@@ -235,7 +235,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 201373374
+              "duration": 210578917
             },
             "embeddings": [
               {
@@ -269,7 +269,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2389288417
+              "duration": 2399995875
             }
           },
           {
@@ -282,7 +282,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1451953250
+              "duration": 1475981625
             }
           },
           {
@@ -295,7 +295,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 71901374
+              "duration": 56572124
             }
           },
           {
@@ -308,7 +308,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1494597124
+              "duration": 1496790249
             }
           },
           {
@@ -321,7 +321,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3483583
+              "duration": 3949792
             }
           },
           {
@@ -334,7 +334,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 168428458
+              "duration": 188904291
             }
           },
           {
@@ -347,7 +347,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5945416
+              "duration": 6353083
             }
           },
           {
@@ -360,7 +360,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 674768082
+              "duration": 651036957
             }
           },
           {
@@ -373,7 +373,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 498162332
+              "duration": 487839832
             }
           },
           {
@@ -386,7 +386,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 49484416
+              "duration": 43449667
             }
           },
           {
@@ -399,7 +399,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 356640834
+              "duration": 391577333
             }
           },
           {
@@ -407,7 +407,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 68120416
+              "duration": 69454666
             }
           }
         ],
@@ -431,7 +431,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2407791250
+              "duration": 2294907792
             }
           },
           {
@@ -444,7 +444,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1445590999
+              "duration": 1481375833
             }
           },
           {
@@ -457,7 +457,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 89868874
+              "duration": 65305584
             }
           },
           {
@@ -470,7 +470,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1500248541
+              "duration": 1513382000
             }
           },
           {
@@ -483,7 +483,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2912832
+              "duration": 2904500
             }
           },
           {
@@ -496,7 +496,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 186051916
+              "duration": 190559541
             }
           },
           {
@@ -509,7 +509,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5696666
+              "duration": 5546292
             }
           },
           {
@@ -522,7 +522,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 671183250
+              "duration": 669961165
             }
           },
           {
@@ -535,7 +535,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 484285791
+              "duration": 434756083
             }
           },
           {
@@ -548,7 +548,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 42694499
+              "duration": 44001625
             }
           },
           {
@@ -561,7 +561,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 394445417
+              "duration": 388335916
             }
           },
           {
@@ -569,7 +569,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 62052042
+              "duration": 70924916
             }
           }
         ],
@@ -593,7 +593,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2656619791
+              "duration": 2174021499
             }
           },
           {
@@ -606,7 +606,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1454036874
+              "duration": 1465068041
             }
           },
           {
@@ -619,7 +619,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 71365999
+              "duration": 71076082
             }
           },
           {
@@ -632,7 +632,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1497534041
+              "duration": 1500026792
             }
           },
           {
@@ -645,7 +645,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2876166
+              "duration": 2955583
             }
           },
           {
@@ -658,7 +658,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 187390208
+              "duration": 163212125
             }
           },
           {
@@ -671,7 +671,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5405167
+              "duration": 5025458
             }
           },
           {
@@ -684,7 +684,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 572490584
+              "duration": 560936625
             }
           },
           {
@@ -697,7 +697,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 619336208
+              "duration": 621169333
             }
           },
           {
@@ -710,7 +710,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38870665
+              "duration": 39711749
             }
           },
           {
@@ -723,7 +723,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 416458666
+              "duration": 376046666
             }
           },
           {
@@ -731,7 +731,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 71111584
+              "duration": 64591500
             }
           }
         ],

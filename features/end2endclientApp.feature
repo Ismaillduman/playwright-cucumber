@@ -15,7 +15,7 @@ Feature: Client App action
   @End2End @SmokeTest
   Scenario Outline: User Try to login with invalid credentials
     Given I fill the login form with invalid '<userName>' and '<password>'
-    Then I should not see the home page title 'Let's Shop'
+    Then I should not go to the dashboard Page
 
     Examples: 
       | userName             | password    |
