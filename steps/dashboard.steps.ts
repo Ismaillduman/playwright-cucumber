@@ -6,7 +6,7 @@ import { DashboardPage } from "../page_objects/DashboardPage";
 Given("User should be able to open dashboard Page", async function () {
   const dashboardPage = new DashboardPage(page);
   await dashboardPage.goToDashboardPage();
-  await page.pause();
+  
 });
 
 When(
