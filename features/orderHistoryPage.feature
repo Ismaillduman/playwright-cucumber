@@ -1,8 +1,8 @@
-Feature: Order history page
+Feature: Review the current product on the order history and verify the product 
     Feature Description: user should be able to choose current product on history page and verify it
 
   @regression @history
-  Scenario Outline: From dashboard page  add the product to the cart.
+  Scenario Outline: Review the current product on the order history and verify the product 
    
     Given user logged with '<userName>', '<password>', add a '<productName>' inside the cart and I filled out '<countrycode>', '<countryName>' at the placeorder page and i see the '<expectedText>' text.
     And user should be able to choose current product on history page and verify it

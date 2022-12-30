@@ -1,8 +1,8 @@
-Feature: Place Order page
-    Feature Description: verify user mail and select to the country
+Feature: The user should be able to enter the address and order the product on the Place Order page
+    Feature Description:  select to the country and place order
 
   @regression @placeOrder
-  Scenario Outline: From dashboard page  add the product to the cart.
+  Scenario Outline: select to the country and place order
     Given user logged with '<userName>', '<password>' and add a product '<productName>' inside the cart
     Then check to the correctness of the user Email '<userName>' on the Cart Page
     Then user should be able select '<countryCode>' , '<country>' the country
