@@ -28,7 +28,7 @@ export class LoginPage {
     await this.page.waitForLoadState("networkidle");
   }
 
- async dashBoardPageTitleVerify(){
+ async dashBoardPageUrlVerify(){
 
   await expect(this.page).toHaveURL('https://rahulshettyacademy.com/client/dashboard/dash');
   console.log(await this.page.title() + ' page title');
