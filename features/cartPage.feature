@@ -1,12 +1,10 @@
-Feature: Cart page
+Feature: user verify the product name on the Cart page
 
-    Feature Description:
+    Feature Description: the user should be able to see the selected product in the cart
     @regression @Cart
-    Scenario Outline: From dashboard page  add the product to the cart.
+    Scenario Outline: On the cart page verify the product name.
 
-        # Given User should be able to open dashboard Page
-        # When user should be able to add the selected product '<productName>' to the cart
-        # Then  user can be able to navi to chart page
+       
         Given user logged with '<userName>', '<password>' and a '<productName>' inside the cart.
         Then  user check to  the correctness of the product '<productName>' on the Cart Page
         Then user click checkout button
