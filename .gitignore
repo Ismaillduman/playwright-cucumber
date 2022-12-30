@@ -3,3 +3,4 @@ node_modules/
 /Screenshots/
 /test-results/ 
 /screenshots/
+/cucumber_report.json
