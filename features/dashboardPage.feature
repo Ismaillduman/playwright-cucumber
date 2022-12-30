@@ -1,4 +1,4 @@
-Feature: Dashboard Page
+Feature: user should be able to select a product on the Dashboard Page
 
     Feature Description: user should be able to add the selected product  to the cart
     @regression @dashboard
