@@ -2,8 +2,9 @@ let options=[
 
     '--require-module ts-node/register',
     '--require ./steps/*.steps.ts',
-    '--format progress',
-    '--format json:./Reports/cucumber_report.json',
+    '--format progress-bar',
+    '--publish-quiet',
+    '--format json:./test-results/cucumber_report.json',
 ].join(' ');
 
 let run_features= [
