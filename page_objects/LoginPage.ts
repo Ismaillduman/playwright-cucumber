@@ -6,6 +6,7 @@ export class LoginPage {
   email: Locator;
   password: Locator;
   page: Page;
+  loginTextLoc: Locator;
  
   incorrestData:Locator;
 
@@ -15,6 +16,7 @@ export class LoginPage {
     this.password = page.locator("#userPassword");
     this.signInbutton = page.locator("[value='Login']");
     this.incorrestData=page.locator('#toast-container');
+    this.loginTextLoc=page.locator('.login-title')
   
 
   }
@@ -55,6 +57,13 @@ await expect(this.page).toHaveURL('https://rahulshettyacademy.com/client/auth/lo
   
  }
  
+ async loginPageIsVisible(){
+const loginText= await this.loginTextLoc.textContent();
+
+  expect(loginText==='Log in');
+ console.log(loginText);
+  
+ }
 
   // console.log(await this.page.title())
   // await expect(this.incorrestData).toHaveText('Incorrect email or password.');

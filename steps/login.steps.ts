@@ -1,11 +1,19 @@
 //Login and see dashboard
 
-import { Given, Then } from "@cucumber/cucumber";
+import { Given, Then, When } from "@cucumber/cucumber";
+import { expect } from "@playwright/test";
 import { page } from "../hooks/world";
 import { LoginPage } from "../page_objects/LoginPage";
 
-Given(
-  "I fill the login form with valid {string} and {string}",
+
+
+Given('user should be able to on the {string}', async function (string) {
+  const loginPage = new LoginPage(page);
+  await loginPage.loginPageIsVisible();
+});
+
+When(
+  "user fill the login form with valid {string} and {string}",
   async function (userName, userpassword) {
     const loginPage = new LoginPage(page);
     await loginPage.validLogin(userName, userpassword);
@@ -18,7 +26,8 @@ Then("I should see the home page title 'Let's Shop'", async function () {
 });
 
 //Could not login
-Given(
+
+When(
   "I fill the login form with invalid {string} and {string}",
   async function (userName, userpassword) {
     const loginPage = new LoginPage(page);
@@ -26,7 +35,7 @@ Given(
   }
 );
 
-Then("I should not go to the dashboard Page", async function () {
+Then("I should not see to the dashboard Page", async function () {
   const loginPage = new LoginPage(page);
   await loginPage.invalidLoginMessage();
 });

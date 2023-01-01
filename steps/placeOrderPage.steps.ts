@@ -30,7 +30,7 @@ Then(
   }
 );
 
-Then(
+When(
   "user should be able select {string} , {string} the country",
   async function (countrycode, countryName) {
     const placeOrderPage = new PlaceOrderPage(page);
@@ -38,15 +38,31 @@ Then(
   }
 );
 
-Then(
-  "user should be able to click place order button and verify the confirmation text {string}",
-  async function (expectedText: string) {
-    const placeOrderPage = new PlaceOrderPage(page);
-    orderId = await placeOrderPage.orderConfirmationGetOrderId(expectedText);
-  }
-);
+When('user should be able to click place order button to confirm order', async function () {
+  const placeOrderPage = new PlaceOrderPage(page);
+  await placeOrderPage.confirmOrder();
+});
 
-Then("user can be able to navi to orders", async function () {
+
+Then('usershould be able to verify the confirmation text {string}', async function (expectedText:string) {
+  const placeOrderPage = new PlaceOrderPage(page);
+    orderId = await placeOrderPage.orderConfirmationGetOrderId(expectedText);
+});
+When("user can be able to navi to orders", async function () {
   const placeOrderPage = new PlaceOrderPage(page);
   await placeOrderPage.naviOrders();
 });
+
+Then ('the user should also see the {string}', async function(string){
+  const placeOrderPage = new PlaceOrderPage(page);
+  await placeOrderPage.orderPageIsVisible();
+}
+)
+
+
+
+
+
+
+
+

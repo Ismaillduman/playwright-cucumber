@@ -7,7 +7,8 @@ Feature: user verify the product name on the Cart page
        
         Given user logged with '<userName>', '<password>' and a '<productName>' inside the cart.
         Then  user check to  the correctness of the product '<productName>' on the Cart Page
-        Then user click checkout button
+        When user click checkout button
+        Then user should be able to see the 'Place Order Page'
 
 
         Examples:

@@ -5,9 +5,11 @@ Feature: The user should be able to enter the address and order the product on t
   Scenario Outline: select to the country and place order
     Given user logged with '<userName>', '<password>' and add a product '<productName>' inside the cart
     Then check to the correctness of the user Email '<userName>' on the Cart Page
-    Then user should be able select '<countryCode>' , '<country>' the country
-    Then user should be able to click place order button and verify the confirmation text '<text>'
-    Then user can be able to navi to orders
+    When user should be able select '<countryCode>' , '<country>' the country
+    And user should be able to click place order button to confirm order
+    Then usershould be able to verify the confirmation text '<text>'
+    When user can be able to navi to orders
+    Then the user should also see the 'Order History Page'
 
     Examples: 
       | productName     | userName             | countryCode | country | text                    | password    |

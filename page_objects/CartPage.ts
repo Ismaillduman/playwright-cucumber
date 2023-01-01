@@ -1,13 +1,18 @@
 import { expect, Locator, Page } from "@playwright/test";
+import { page } from "../hooks/world";
 
 export class CartPage {
   checkout: Locator;
   page: Page;
   table: Locator;
+  shippingInformation:Locator;
+  placeOrderBtn: Locator;
   constructor(page: Page) {
     this.checkout = page.locator("text=Checkout");
     this.page = page;
     this.table = page.locator("div .cart");
+    this.shippingInformation=page.locator("div[class='payment__shipping'] div[class='payment__title']");
+    this.placeOrderBtn = page.locator("text=Place Order ");
   }
 
   async getProductLocator(productName: string) {
@@ -23,5 +28,17 @@ export class CartPage {
 
   async checkOut() {
     await this.checkout.click();
+    await this.page.waitForLoadState("networkidle");
+   
   }
+
+   async placeOrderPageConfirmation(){
+
+    const shipping= await this.shippingInformation.textContent();
+    console.log(shipping);
+     expect(shipping===' Shipping Information ');
+   
+   
+  
+   };
 }

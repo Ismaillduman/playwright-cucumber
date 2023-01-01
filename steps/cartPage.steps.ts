@@ -24,7 +24,13 @@ Then(
     await cartPage.verifyProduct(productName);
   }
 );
-Then("user click checkout button", async () => {
+When("user click checkout button", async () => {
+ 
   const cartPage = new CartPage(page);
   await cartPage.checkOut();
+});
+
+Then('user should be able to see the {string}', async function (string) {
+  const cartPage = new CartPage(page);
+   await cartPage.placeOrderPageConfirmation();
 });
