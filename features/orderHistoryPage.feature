@@ -5,7 +5,8 @@ Feature: Review the current product on the order history and verify the product
   Scenario Outline: Review the current product on the order history and verify the product 
    
     Given user logged with '<userName>', '<password>', add a '<productName>' inside the cart and I filled out '<countrycode>', '<countryName>' at the placeorder page and i see the '<expectedText>' text.
-    And user should be able to choose current product on history page and verify it
+    When user should be able to choose current product on 'history page'
+    Then  user should be able to verify current product
 
     Examples: 
       | productName     | userName             | countrycode | countryName |password| expectedText|

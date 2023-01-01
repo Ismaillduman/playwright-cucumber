@@ -32,6 +32,7 @@ Given(
     await placeOrderPage.verifyUserEmail(userName);
 
     await placeOrderPage.userCountry(countrycode, countryName);
+    await placeOrderPage.confirmOrder();
 
     orderId = await placeOrderPage.orderConfirmationGetOrderId(expectedText);
     await placeOrderPage.naviOrders();
@@ -39,13 +40,27 @@ Given(
 );
 
 //Order history Page
-Then(
-  "user should be able to choose current product on history page and verify it",
-  async function () {
-    const ordersHistoryPage = new OrdersHistoryPage(page);
+// Then(
+//   "user should be able to choose current product on history page and verify it",
+//   async function () {
+//     const ordersHistoryPage = new OrdersHistoryPage(page);
+//     await ordersHistoryPage.selectOrderId(orderId!);
+//     expect(
+//       orderId?.includes((await ordersHistoryPage.getOrderDetailsId()) as string)
+//     ).toBeTruthy();
+//   }
+// );
+When('user should be able to choose current product on {string}', async function (string) {
+  const ordersHistoryPage = new OrdersHistoryPage(page);
     await ordersHistoryPage.selectOrderId(orderId!);
+});
+
+
+
+Then('user should be able to verify current product',async function () {
+  const ordersHistoryPage = new OrdersHistoryPage(page);
+   
     expect(
       orderId?.includes((await ordersHistoryPage.getOrderDetailsId()) as string)
     ).toBeTruthy();
-  }
-);
+});

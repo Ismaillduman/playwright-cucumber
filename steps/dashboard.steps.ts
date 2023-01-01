@@ -3,10 +3,9 @@ import { page } from "../hooks/world";
 import { DashboardPage } from "../page_objects/DashboardPage";
 
 //Dashboard Page
-Given("User should be able to open dashboard Page", async function () {
+Given("User should be able to on the dashboard Page", async function () {
   const dashboardPage = new DashboardPage(page);
   await dashboardPage.goToDashboardPage();
-  
 });
 
 When(
@@ -17,7 +16,11 @@ When(
   }
 );
 
-Then("user can be able to navi to chart page", async function () {
+When("user can be able to navi to chart page", async function () {
   const dashboardPage = new DashboardPage(page);
   await dashboardPage.naviToCart();
+});
+Then("user should see the {string}", async function (string) {
+  const dashboardPage = new DashboardPage(page);
+  await dashboardPage.cartPageVerify();
 });

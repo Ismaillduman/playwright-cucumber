@@ -5,7 +5,7 @@
     "cucumberautocomplete.syncfeatures": "features/*feature",
     "cucumberautocomplete.strictGherkinCompletion": true,
     "editor.quickSuggestions": {
-        "comments": false,
+        "comments": true,
         "strings": true,
         "other": true
     },

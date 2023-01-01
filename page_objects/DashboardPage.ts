@@ -1,5 +1,7 @@
-import { Locator, Page } from "@playwright/test";
+import { expect, Locator, Page } from "@playwright/test";
 import test from "node:test";
+import { page } from "../hooks/world";
+
 
 export class DashboardPage {
   product: Locator;
@@ -10,6 +12,7 @@ export class DashboardPage {
   email: Locator;
   password: Locator;
   page:Page;
+  //cartPageVerify:Locator;
 
  
 
@@ -23,6 +26,7 @@ this.page=page;
     this.email = page.locator("#userEmail");
     this.password = page.locator("#userPassword");
     this.signInbutton = page.locator("[value='Login']");
+    //this.cartPageVerify=page.locator(Text='My Cart')
    
   }
   async goToDashboardPage(){
@@ -51,5 +55,10 @@ await this.page.waitForLoadState("networkidle");
 
   async naviToCart(){
     await this.cart.click();
+  }
+  async cartPageVerify(){
+    await expect(page.getByText('My cart')).toBeVisible();
+    console.log(page.getByText('My cart'));
+    
   }
 }

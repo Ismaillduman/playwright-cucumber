@@ -8,6 +8,7 @@ export class PlaceOrderPage {
   confirmationText: Locator;
   orderId: Locator;
   ordersBtn: Locator;
+  yourOrders: Locator;
   constructor(page: Page) {
     this.userEmail = page.locator(".mt-5 [type='text']").first();
     this.selectCountry = page.locator("[placeholder='Select Country']");
@@ -16,6 +17,7 @@ export class PlaceOrderPage {
     this.confirmationText = page.locator(".hero-primary");
     this.orderId = page.locator(".em-spacer-1 .ng-star-inserted");
     this.ordersBtn = page.locator("button[routerlink='/dashboard/myorders']");
+    this.yourOrders= page.locator("text=Your Orders");
   }
 
   async verifyUserEmail(userName: string | RegExp | (string | RegExp)[]) {
@@ -46,8 +48,12 @@ export class PlaceOrderPage {
     }
   }
 
-  async orderConfirmationGetOrderId(expectedText:string) {
+  async confirmOrder(){
     await this.placeOrderBtn.click();
+  }
+
+  async orderConfirmationGetOrderId(expectedText:string) {
+   
     await expect(this.confirmationText).toHaveText(expectedText);
     //console.log((await this.orderId.textContent()) + "Order Id");
     return await this.orderId.textContent(); //to use another pages
@@ -55,5 +61,9 @@ export class PlaceOrderPage {
 
   async naviOrders() {
     await this.ordersBtn.click();
+  }
+
+  async orderPageIsVisible(){
+    expect(await this.yourOrders.isVisible());
   }
 }
