@@ -1,20 +1,20 @@
 [
   {
-    "description": "    As a user I want to login with valid credentials into application and not login invalid credentials",
+    "description": "Feature Description: user should be able create a new account ",
     "elements": [
       {
         "description": "",
-        "id": "client-app-login;login-with-valid-credentials",
+        "id": "create-a-new-user-account;",
         "keyword": "Scenario Outline",
-        "line": 8,
-        "name": "Login with valid credentials",
+        "line": 4,
+        "name": "",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2538039292
+              "duration": 2241380999
             }
           },
           {
@@ -27,296 +27,98 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16929917
+              "duration": 19121249
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 9,
-            "name": "user fill the login form with valid 'busrayusuf@gmail.com' and 'HKNclb8318.'",
+            "line": 6,
+            "name": "user shoul be able to navi to 'register page'",
             "match": {
-              "location": "steps/login.steps.ts:22"
+              "location": "steps/registerPage.steps.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 1539503791
+              "duration": 65718249
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
-            "name": "I should see the home page title 'Let's Shop'",
+            "line": 7,
+            "name": "user shoul see register table",
             "match": {
-              "location": "steps/login.steps.ts:28"
+              "location": "steps/registerPage.steps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 19683125
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 76183292
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@SmokeTest",
-            "line": 7
-          },
-          {
-            "name": "@regression",
-            "line": 7
-          },
-          {
-            "name": "@login",
-            "line": 7
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "client-app-login;login-with-valid-credentials",
-        "keyword": "Scenario Outline",
-        "line": 8,
-        "name": "Login with valid credentials",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 2478276833
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "user should be able to on the 'Login Page'",
-            "match": {
-              "location": "steps/login.steps.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11078291
+              "duration": 6116749
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 9,
-            "name": "user fill the login form with valid 'ismaildumann@web.de' and 'HKNclb8318.'",
+            "line": 8,
+            "name": "user enter 'first_name' 'last_name' 'email' and '1234567890'",
             "match": {
-              "location": "steps/login.steps.ts:22"
+              "location": "steps/registerPage.steps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 1502856874
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I should see the home page title 'Let's Shop'",
-            "match": {
-              "location": "steps/login.steps.ts:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 33420458
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 73041208
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@SmokeTest",
-            "line": 7
-          },
-          {
-            "name": "@regression",
-            "line": 7
-          },
-          {
-            "name": "@login",
-            "line": 7
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "client-app-login;user-try-to-login-with-invalid-credentials",
-        "keyword": "Scenario Outline",
-        "line": 18,
-        "name": "User Try to login with invalid credentials",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 2483553042
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "user should be able to on the 'Login Page'",
-            "match": {
-              "location": "steps/login.steps.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 13750500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "I fill the login form with invalid 'buusuf@gmail.com' and 'HKNclb8318.'",
-            "match": {
-              "location": "steps/login.steps.ts:36"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 710576999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "I should not see to the dashboard Page",
-            "match": {
-              "location": "steps/login.steps.ts:42"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 21874458
+              "duration": 35655457
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
-            "name": "user should be able to see the incorrect email or password message",
+            "line": 9,
+            "name": "user sholud be able to select 'OccupAtion' and 'Gender'",
             "match": {
-              "location": "steps/login.steps.ts:48"
+              "location": "steps/registerPage.steps.ts:36"
             },
             "result": {
               "status": "passed",
-              "duration": 13321874
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 76591125
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@SmokeTest",
-            "line": 17
-          },
-          {
-            "name": "@regression",
-            "line": 17
-          },
-          {
-            "name": "@login",
-            "line": 17
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "client-app-login;user-try-to-login-with-invalid-credentials",
-        "keyword": "Scenario Outline",
-        "line": 18,
-        "name": "User Try to login with invalid credentials",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 2374289999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "user should be able to on the 'Login Page'",
-            "match": {
-              "location": "steps/login.steps.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 12682500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "I fill the login form with invalid 'busrayusuf@gmail.com' and 'HKNclb8318'",
-            "match": {
-              "location": "steps/login.steps.ts:36"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 788567332
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "I should not see to the dashboard Page",
-            "match": {
-              "location": "steps/login.steps.ts:42"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 15503667
+              "duration": 35003000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
-            "name": "user should be able to see the incorrect email or password message",
+            "line": 10,
+            "name": "user enter the 'SCTjhnsn1256.,' and 'SCTjhnsn1256.,'",
             "match": {
-              "location": "steps/login.steps.ts:48"
+              "location": "steps/registerPage.steps.ts:43"
             },
             "result": {
               "status": "passed",
-              "duration": 11949542
+              "duration": 24791042
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the user confirm that  is over 18 years old and and completes the registration",
+            "match": {
+              "location": "steps/registerPage.steps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27846041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the user sees the message registration completed successfully",
+            "match": {
+              "location": "steps/registerPage.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 397448082
             }
           },
           {
@@ -324,32 +126,24 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 77190584
+              "duration": 71107374
             }
           }
         ],
         "tags": [
           {
-            "name": "@SmokeTest",
-            "line": 17
-          },
-          {
-            "name": "@regression",
-            "line": 17
-          },
-          {
-            "name": "@login",
-            "line": 17
+            "name": "@register",
+            "line": 3
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "client-app-login",
+    "id": "create-a-new-user-account",
     "line": 1,
     "keyword": "Feature",
-    "name": "Client App Login",
+    "name": "create a new user account",
     "tags": [],
-    "uri": "features/account-suite/login.feature"
+    "uri": "features/account-suite/register.feature"
   }
 ]

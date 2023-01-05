@@ -5,26 +5,26 @@
   "main": "index.ts",
   "scripts": {
     "test": "npx cucumber-js -p test_runner --tags @End2End & ts-node ./htmlReportGenerator.ts",
-    "smokeTest":"npx cucumber-js -p test_runner --tags @SmokeTest & ts-node ./htmlReportGenerator.ts",
-    "regression":"npx cucumber-js -p test_runner --tags @regression & ts-node ./htmlReportGenerator.ts",
-    "history":"npx cucumber-js -p test_runner --tags @history & ts-node ./htmlReportGenerator.ts",
-    "login":"npx cucumber-js -p test_runner --tags @login & ts-node ./htmlReportGenerator.ts",
-    "dashboard":"npx cucumber-js -p test_runner --tags @dashboard & ts-node ./htmlReportGenerator.ts",
-    "cart":"npx cucumber-js -p test_runner --tags @Cart & ts-node ./htmlReportGenerator.ts",
-    "placeorder":"npx cucumber-js -p test_runner --tags @placeOrder & ts-node ./htmlReportGenerator.ts",
-    "newpassword":"npx cucumber-js -p test_runner --tags @password_forgot & ts-node ./htmlReportGenerator.ts"
-
-
-   
+    "smokeTest": "npx cucumber-js -p test_runner --tags @SmokeTest & ts-node ./htmlReportGenerator.ts",
+    "regression": "npx cucumber-js -p test_runner --tags @regression & ts-node ./htmlReportGenerator.ts",
+    "history": "npx cucumber-js -p test_runner --tags @history & ts-node ./htmlReportGenerator.ts",
+    "login": "npx cucumber-js -p test_runner --tags @login & ts-node ./htmlReportGenerator.ts",
+    "dashboard": "npx cucumber-js -p test_runner --tags @dashboard & ts-node ./htmlReportGenerator.ts",
+    "cart": "npx cucumber-js -p test_runner --tags @Cart & ts-node ./htmlReportGenerator.ts",
+    "placeorder": "npx cucumber-js -p test_runner --tags @placeOrder & ts-node ./htmlReportGenerator.ts",
+    "newpassword": "npx cucumber-js -p test_runner --tags @password_forgot & ts-node ./htmlReportGenerator.ts",
+    "register": "npx cucumber-js -p test_runner --tags @register & ts-node ./htmlReportGenerator.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@cucumber/cucumber": "^8.9.1",
     "@playwright/test": "^1.29.0",
+    "@faker-js/faker": "^7.6.0",
     "@types/cucumber-html-reporter": "^5.0.1",
     "cucumber-html-reporter": "^5.5.0",
     "playwright": "^1.29.0",
+    "faker": "^6.6.6",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.4"
   }
