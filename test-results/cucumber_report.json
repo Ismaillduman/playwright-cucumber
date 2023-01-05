@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "client-app-login;login-with-valid-credentials",
+        "id": "client-app-login;user-try-to-login-with-invalid-credentials",
         "keyword": "Scenario Outline",
-        "line": 8,
-        "name": "Login with valid credentials",
+        "line": 18,
+        "name": "User Try to login with invalid credentials",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2409274750
+              "duration": 2496327041
             }
           },
           {
@@ -27,33 +27,46 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16646832
+              "duration": 18382958
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 9,
-            "name": "user fill the login form with valid 'busrayusuf@gmail.com' and 'HKNclb8318.'",
+            "line": 19,
+            "name": "I fill the login form with invalid 'buusuf@gmail.com' and 'HKNclb8318.'",
             "match": {
-              "location": "steps/login.steps.ts:22"
+              "location": "steps/login.steps.ts:36"
             },
             "result": {
               "status": "passed",
-              "duration": 1501104000
+              "duration": 716183875
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
-            "name": "I should see the home page title 'Let's Shop'",
+            "line": 20,
+            "name": "I should not see to the dashboard Page",
             "match": {
-              "location": "steps/login.steps.ts:28"
+              "location": "steps/login.steps.ts:42"
             },
             "result": {
               "status": "passed",
-              "duration": 20028292
+              "duration": 15105667
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "user should be able to see the incorrect email or password message",
+            "match": {
+              "location": "steps/login.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8776667
             }
           },
           {
@@ -61,39 +74,39 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 68953583
+              "duration": 69714459
             }
           }
         ],
         "tags": [
           {
             "name": "@SmokeTest",
-            "line": 7
+            "line": 17
           },
           {
             "name": "@regression",
-            "line": 7
+            "line": 17
           },
           {
             "name": "@login1",
-            "line": 7
+            "line": 17
           }
         ],
         "type": "scenario"
       },
       {
         "description": "",
-        "id": "client-app-login;login-with-valid-credentials",
+        "id": "client-app-login;user-try-to-login-with-invalid-credentials",
         "keyword": "Scenario Outline",
-        "line": 8,
-        "name": "Login with valid credentials",
+        "line": 18,
+        "name": "User Try to login with invalid credentials",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2346069292
+              "duration": 2323392999
             }
           },
           {
@@ -106,33 +119,46 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11474541
+              "duration": 13044291
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 9,
-            "name": "user fill the login form with valid 'ismaildumann@web.de' and 'HKNclb8318.'",
+            "line": 19,
+            "name": "I fill the login form with invalid 'busrayusuf@gmail.com' and 'HKNclb8318'",
             "match": {
-              "location": "steps/login.steps.ts:22"
+              "location": "steps/login.steps.ts:36"
             },
             "result": {
               "status": "passed",
-              "duration": 1504022166
+              "duration": 827235208
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
-            "name": "I should see the home page title 'Let's Shop'",
+            "line": 20,
+            "name": "I should not see to the dashboard Page",
             "match": {
-              "location": "steps/login.steps.ts:28"
+              "location": "steps/login.steps.ts:42"
             },
             "result": {
               "status": "passed",
-              "duration": 18290000
+              "duration": 13173041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "user should be able to see the incorrect email or password message",
+            "match": {
+              "location": "steps/login.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11281375
             }
           },
           {
@@ -140,22 +166,22 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 68091667
+              "duration": 67908125
             }
           }
         ],
         "tags": [
           {
             "name": "@SmokeTest",
-            "line": 7
+            "line": 17
           },
           {
             "name": "@regression",
-            "line": 7
+            "line": 17
           },
           {
             "name": "@login1",
-            "line": 7
+            "line": 17
           }
         ],
         "type": "scenario"
