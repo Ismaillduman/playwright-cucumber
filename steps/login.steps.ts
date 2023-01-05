@@ -40,3 +40,8 @@ Then("I should not see to the dashboard Page", async function () {
   const loginPage = new LoginPage(page);
   await loginPage.invalidLoginMessage();
 });
+Then("user should be able to see the incorrect email or password message", async function () {
+  const loginPage = new LoginPage(page);
+  await loginPage.verifyIncorrectMessageOrPassword();
+});
+

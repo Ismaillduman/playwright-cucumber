@@ -4,7 +4,7 @@ Feature: Client App Login
   Background: login page must be ready
     Given user should be able to on the 'Login Page'
 
-  @SmokeTest @regression @login1
+  @SmokeTest @regression @login
   Scenario Outline: Login with valid credentials
     When user fill the login form with valid '<userName>' and '<password>'
     Then I should see the home page title 'Let's Shop'
@@ -14,10 +14,11 @@ Feature: Client App Login
       | busrayusuf@gmail.com | HKNclb8318. |
       | ismaildumann@web.de  | HKNclb8318. |
 
-  @SmokeTest @regression @login
+  @SmokeTest @regression @login1
   Scenario Outline: User Try to login with invalid credentials
     When I fill the login form with invalid '<userName>' and '<password>'
     Then I should not see to the dashboard Page
+    And user should be able to see the incorrect email or password message
 
     Examples: 
       | userName             | password    |
