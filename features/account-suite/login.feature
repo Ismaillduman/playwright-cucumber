@@ -14,7 +14,7 @@ Feature: Client App Login
       | busrayusuf@gmail.com | HKNclb8318. |
       | ismaildumann@web.de  | HKNclb8318. |
 
-  @SmokeTest @regression @login1
+  @SmokeTest @regression @login
   Scenario Outline: User Try to login with invalid credentials
     When I fill the login form with invalid '<userName>' and '<password>'
     Then I should not see to the dashboard Page
