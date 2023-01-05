@@ -26,3 +26,4 @@ Feature Description:user should be able to generate a new password when forgets 
     Examples: 
       | email           | password    | confirm_password |
       | sctt@gmail.com | BSRysf8193. | BSRysf8193.      |
+ 
