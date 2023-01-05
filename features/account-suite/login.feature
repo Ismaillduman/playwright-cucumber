@@ -4,7 +4,7 @@ Feature: Client App Login
   Background: login page must be ready
     Given user should be able to on the 'Login Page'
 
-  @SmokeTest @regression @login
+  @SmokeTest @regression @login1
   Scenario Outline: Login with valid credentials
     When user fill the login form with valid '<userName>' and '<password>'
     Then I should see the home page title 'Let's Shop'

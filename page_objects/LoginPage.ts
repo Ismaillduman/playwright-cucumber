@@ -7,6 +7,7 @@ export class LoginPage {
   password: Locator;
   page: Page;
   loginTextLoc: Locator;
+  toastMessage:Locator
  
   incorrestData:Locator;
 
@@ -16,7 +17,9 @@ export class LoginPage {
     this.password = page.locator("#userPassword");
     this.signInbutton = page.locator("[value='Login']");
     this.incorrestData=page.locator('#toast-container');
-    this.loginTextLoc=page.locator('.login-title')
+    this.loginTextLoc=page.locator('.login-title');
+    this.toastMessage=page.locator('[aria-label="Login Successfully"]');
+
   
 
   }
@@ -62,6 +65,15 @@ const loginText= await this.loginTextLoc.textContent();
 
   expect(loginText==='Log in');
  console.log(loginText);
+  
+ }
+ async verifyloginSuccessfully(){
+  
+
+  await expect (this.toastMessage).toHaveText(' Login Successfully ');
+const loginSuccessfull= await this.toastMessage.textContent();
+console.log(loginSuccessfull);
+
   
  }
 
