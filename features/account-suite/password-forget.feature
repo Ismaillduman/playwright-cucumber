@@ -21,7 +21,7 @@ Feature Description:user should be able to generate a new password when forgets 
     When user should be able to navigate to 'new Password Page'
     Then user should see the Enter New Password table
     When user enter '<email>' '<password>' '<confirm_password>'
-    Then user try to save the new password but see user not found message
+    Then user try to save the new password but see 'user not found' message
 
     Examples: 
       | email           | password    | confirm_password |
