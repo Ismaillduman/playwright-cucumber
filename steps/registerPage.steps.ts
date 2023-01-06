@@ -4,13 +4,13 @@ import { page } from "../hooks/world";
 import { LoginPage } from "../page_objects/LoginPage";
 import { RegisterPage } from "../page_objects/RegisterPage";
 
-When('user shoul be able to navi to {string}',async function (string) {
+When('user should be able to navi to {string}',async function (string) {
     const registerPage= new RegisterPage(page);
     await registerPage.goToRegisterPage();
   });
 
 
-  Then('user shoul see register table',async function () {
+  Then('user should see register table',async function () {
     const registerPage= new RegisterPage(page);
    await registerPage.verifyRegisterPage();
   });
@@ -27,7 +27,7 @@ When('user shoul be able to navi to {string}',async function (string) {
 
 
 
-  When('user sholud be able to select {string} and {string}',async function (string, string2) {
+  When('user should be able to select {string} and {string}',async function (string, string2) {
     const registerPage= new RegisterPage(page);
    await registerPage.selectOccupAtion();
    await registerPage.clickGender();
