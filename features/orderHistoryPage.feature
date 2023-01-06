@@ -11,7 +11,10 @@ Feature: Review the current product on the order history and verify the product
       | productName     | userName             | countrycode | countryName | password    | expectedText            |
       | zara coat 3     | busrayusuf@gmail.com | ind         | India       | HKNclb8318. | Thankyou for the order. |
 
+      | adidas original | busrayusuf@gmail.com | ger         | Germany     | HKNclb8318. | Thankyou for the orde   |
+      | iphone 13 pro   | busrayusuf@gmail.com | Be          | Belgium     | HKNclb8318. | Thankyou for the .      |
 
-      | adidas original | busrayusuf@gmail.com | ger         | Germany     | HKNclb8318. | Thankyou for the orde |
 
-      | iphone 13 pro   | busrayusuf@gmail.com | Be          | Belgium     | HKNclb8318. | Thankyou for the order. |
+
+    
+
