@@ -14,5 +14,5 @@ Feature: The user should be able to enter the address and order the product on t
     Examples: 
       | productName     | userName             | countryCode | country | text                    | password    |
       | zara coat 3     | busrayusuf@gmail.com | ind         | India   | Thankyou for the order. | HKNclb8318. |
-      | adidas original | busrayusuf@gmail.com | ger         | Germany | Thankyou for the orde   | HKNclb8318. |
+      | adidas original | busrayusuf@gmail.com | ger         | Germany | Thankyou for the order.   | HKNclb8318. |
       | iphone 13 pro   | busrayusuf@gmail.com | Be          | Belgium | Thankyou for the order. | HKNclb8318. |
