@@ -1,20 +1,20 @@
 [
   {
-    "description": "Feature Description: user should be able create a new account ",
+    "description": "Feature Description:user should be able to generate a new password when forgets the password",
     "elements": [
       {
         "description": "",
-        "id": "create-a-new-user-account;",
+        "id": "generate-new-password;user-should-to-generate-new-password-with-valid-credentials",
         "keyword": "Scenario Outline",
-        "line": 4,
-        "name": "",
+        "line": 8,
+        "name": "User should to generate new password with valid credentials",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2241380999
+              "duration": 2378413042
             }
           },
           {
@@ -27,98 +27,72 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19121249
+              "duration": 15871917
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
-            "name": "user shoul be able to navi to 'register page'",
-            "match": {
-              "location": "steps/registerPage.steps.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 65718249
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "user shoul see register table",
-            "match": {
-              "location": "steps/registerPage.steps.ts:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6116749
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "user enter 'first_name' 'last_name' 'email' and '1234567890'",
-            "match": {
-              "location": "steps/registerPage.steps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 35655457
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 9,
-            "name": "user sholud be able to select 'OccupAtion' and 'Gender'",
+            "name": "user should be able to navigate to 'new Password Page'",
             "match": {
-              "location": "steps/registerPage.steps.ts:36"
+              "location": "steps/passwordForgot.steps.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 35003000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "user enter the 'SCTjhnsn1256.,' and 'SCTjhnsn1256.,'",
-            "match": {
-              "location": "steps/registerPage.steps.ts:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 24791042
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the user confirm that  is over 18 years old and and completes the registration",
-            "match": {
-              "location": "steps/registerPage.steps.ts:50"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 27846041
+              "duration": 61800458
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
-            "name": "the user sees the message registration completed successfully",
+            "line": 10,
+            "name": "user should see the Enter New Password table",
             "match": {
-              "location": "steps/registerPage.steps.ts:56"
+              "location": "steps/passwordForgot.steps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 397448082
+              "duration": 7161416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "user enter 'scott@gmail.com' 'BSRysf8193.' 'BSRysf8193.'",
+            "match": {
+              "location": "steps/passwordForgot.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15925749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "user should save the new password",
+            "match": {
+              "location": "steps/passwordForgot.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41721084
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "user should see the password changed successfully message",
+            "match": {
+              "location": "steps/passwordForgot.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 366537292
             }
           },
           {
@@ -126,24 +100,129 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 71107374
+              "duration": 77251457
             }
           }
         ],
         "tags": [
           {
-            "name": "@register",
-            "line": 3
+            "name": "@regression",
+            "line": 7
+          },
+          {
+            "name": "@password_forgot",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "generate-new-password;user-should-not-be-able-to-generate-new-password-with-unregistered-mail",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "User should not be able to generate new password with unregistered mail",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2438153166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user should be able to on the 'Login Page'",
+            "match": {
+              "location": "steps/login.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13355041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "user should be able to navigate to 'new Password Page'",
+            "match": {
+              "location": "steps/passwordForgot.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60075375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "user should see the Enter New Password table",
+            "match": {
+              "location": "steps/passwordForgot.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5917625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "user enter 'sctt@gmail.com' 'BSRysf8193.' 'BSRysf8193.'",
+            "match": {
+              "location": "steps/passwordForgot.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15021666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "user try to save the new password but see 'user not found' message",
+            "match": {
+              "location": "steps/passwordForgot.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 410509208
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 77778124
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 19
+          },
+          {
+            "name": "@password_forgot",
+            "line": 19
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "create-a-new-user-account",
+    "id": "generate-new-password",
     "line": 1,
     "keyword": "Feature",
-    "name": "create a new user account",
+    "name": "generate new Password",
     "tags": [],
-    "uri": "features/account-suite/register.feature"
+    "uri": "features/account-suite/password-forget.feature"
   }
 ]
