@@ -15,18 +15,18 @@ userPassword:Locator;
 confirmPassword:Locator;
 ageConfirm:Locator;
 registerEnd:Locator;
-studentDrop:Locator;
+              studentDrop:Locator;
 successfullyMessage:Locator;
 
 constructor(page:Page){
-this.registerBtn=page.locator('[routerlink="/auth/register"]');
+          this.registerBtn=page.locator('[routerlink="/auth/register"]');
 this.registerTable=page.locator('.login-title');
 this.fName=page.locator('#firstName');
 this.lName=page.locator('#lastName');
 this.userEmail=page.locator('#userEmail');
 this.userPassword=page.locator('#userPassword');
 this.confirmPassword=page.locator('#confirmPassword');
-this.phone=page.locator('#userMobile');
+          this.phone=page.locator('#userMobile');
 this.occupationDrop=page.locator('[formcontrolname="occupation"]');
 this.gender=page.locator('[type="radio"]');
 this.ageConfirm=page.locator('[formcontrolname="required"]');
@@ -40,10 +40,8 @@ this.successfullyMessage=page.locator('[aria-label="Registered Successfully"]');
 async goToRegisterPage(){
     await this.registerBtn.click();
 }
-async verifyRegisterPage(){
-await expect (this.registerTable).toHaveText('Register');
-
-}
+async verifyRegisterPage()
+{ await expect (this.registerTable).toHaveText('Register');}
 async enterEmail(){
     const email= faker.internet.email();
     await this.userEmail.fill(email);
@@ -84,10 +82,7 @@ async registrationEnd(){
 await this.registerEnd.click();
 
 }
-async verifyRegisterSuccessfulL(){
-    await expect(this.successfullyMessage).toHaveText(" Registered Successfully ");
+async verifyRegisterSuccessfulL(){ await expect(this.successfullyMessage).toHaveText(" Registered Successfully ");
     const successfullyMessage=await this.successfullyMessage.textContent();
-    console.log(successfullyMessage);
-    
-}
+    console.log(successfullyMessage);          }
 }
