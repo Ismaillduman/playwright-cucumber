@@ -20,7 +20,7 @@ When(
     await registerPage.enterLName();
     await registerPage.enterEmail();
     await registerPage.phoneNmbr(phone_number);
-  }
+  },
 );
 
 When(
@@ -29,7 +29,7 @@ When(
     const registerPage = new RegisterPage(page);
     await registerPage.selectOccupAtion();
     await registerPage.clickGender();
-  }
+  },
 );
 
 When(
@@ -38,7 +38,7 @@ When(
     const registerPage = new RegisterPage(page);
     await registerPage.enterPassword(password);
     await registerPage.confirmPass(confirm_password);
-  }
+  },
 );
 
 When(
@@ -46,7 +46,7 @@ When(
   async function (int) {
     const registerPage = new RegisterPage(page);
     await registerPage.confirmAge();
-  }
+  },
 );
 
 Then(
@@ -55,5 +55,5 @@ Then(
     const registerPage = new RegisterPage(page);
     await registerPage.registrationEnd();
     await registerPage.verifyRegisterSuccessfulL();
-  }
+  },
 );
