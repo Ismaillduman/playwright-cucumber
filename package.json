@@ -15,9 +15,9 @@
     "newpassword": "npx cucumber-js -p test_runner --tags @password_forgot & ts-node ./htmlReportGenerator.ts",
     "register": "npx cucumber-js -p test_runner --tags @register & ts-node ./htmlReportGenerator.ts",
     "prepare": "husky install",
-    "lint": "eslint src/**/*.ts",
-    "lint-fix": "eslint --fix ./steps/*.steps.ts",
-    "pretty": "prettier --write './steps/*.steps.ts'",
+    "lint": "eslint *.ts",
+    "lint-fix": "eslint --fix *.ts",
+    "pretty": "prettier --write '*.ts'",
     "precommit": "npm run lint-fix && npm run pretty"
   },
   "author": "",
@@ -38,7 +38,9 @@
     "@typescript-eslint/parser": "^5.48.0",
     "eslint": "^8.31.0",
     "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-playwright": "^0.11.2",
+    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
     "prettier": "^2.8.2"

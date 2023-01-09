@@ -1,5 +1,5 @@
-import reporter, { Options } from 'cucumber-html-reporter'
-const date = new Date()
+import reporter, { Options } from 'cucumber-html-reporter';
+const date = new Date();
 
 const currentDate =
   date.getDate() +
@@ -14,7 +14,7 @@ const currentDate =
   '_' +
   date.getSeconds() +
   '_' +
-  date.getMilliseconds()
+  date.getMilliseconds();
 
 const options: Options = {
   brandTitle: 'Client App Test Scenarious',
@@ -25,6 +25,6 @@ const options: Options = {
   storeScreenshots: true,
   launchReport: true,
   reportSuiteAsScenarios: true,
-}
+};
 
-reporter.generate(options)
+reporter.generate(options);

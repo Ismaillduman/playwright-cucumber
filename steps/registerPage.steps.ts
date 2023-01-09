@@ -18,6 +18,7 @@ When(
     const registerPage = new RegisterPage(page);
     await registerPage.enterFName();
     await registerPage.enterLName();
+
     await registerPage.enterEmail();
     await registerPage.phoneNmbr(phone_number);
   },
@@ -37,6 +38,7 @@ When(
   async function (password: string, confirm_password: string) {
     const registerPage = new RegisterPage(page);
     await registerPage.enterPassword(password);
+
     await registerPage.confirmPass(confirm_password);
   },
 );
