@@ -14,7 +14,7 @@ export class OrdersHistoryPage {
   }
 
   async selectOrderId(orderId: string) {
-    this.orderTable.waitFor();
+    await this.orderTable.waitFor();
 
     const count = await this.rows.count();
     for (let i = 0; i < count; i++) {
@@ -30,6 +30,6 @@ export class OrdersHistoryPage {
     return await this.idDetails.textContent();
   }
   async writeOrderId() {
-    console.log(await this.idDetails.textContent());
+    console.log(await this.idDetails.textContent);
   }
 }
