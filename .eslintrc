@@ -1,0 +1,23 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "plugin:playwright/playwright-test",
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
+    ]
+  }
+/*
+//This will just help eslint identify my types of files 
+I'm adding in my plugin, which is the typescript
+which we installed, and then I'm just extending the additional eslint code so
+ I have the playwright test.
+ These are the recommended ones that we simply installed.
+ I also added some is recommended.
+ So this is just some nice recommendations by the eslint.
+ All right, so that's our configuration.
+
+*/

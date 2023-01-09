@@ -1,7 +1,5 @@
-import { Given, Then, When } from "@cucumber/cucumber";
-import { expect } from "@playwright/test";
+import { Then, When } from "@cucumber/cucumber";
 import { page } from "../hooks/world";
-import { LoginPage } from "../page_objects/LoginPage";
 import { RegisterPage } from "../page_objects/RegisterPage";
 
 When('user should be able to navi to {string}',async function (string) {

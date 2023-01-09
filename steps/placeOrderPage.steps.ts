@@ -46,6 +46,7 @@ When('user should be able to click place order button to confirm order', async f
 
 Then('usershould be able to verify the confirmation text {string}', async function (expectedText:string) {
   const placeOrderPage = new PlaceOrderPage(page);
+  
     orderId = await placeOrderPage.orderConfirmationGetOrderId(expectedText);
 });
 When("user can be able to navi to orders", async function () {
