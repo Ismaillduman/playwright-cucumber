@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "npx cucumber-js -p test_runner --tags @End2End & ts-node ./htmlReportGenerator.ts",
+    "test": "npx cucumber-js -p test_runner --tags @regression  & ts-node ./htmlReportGenerator.ts",
     "smokeTest": "npx cucumber-js -p test_runner --tags @SmokeTest & ts-node ./htmlReportGenerator.ts",
     "regression": "npx cucumber-js -p test_runner --tags @regression & ts-node ./htmlReportGenerator.ts",
     "history": "npx cucumber-js -p test_runner --tags @history & ts-node ./htmlReportGenerator.ts",
