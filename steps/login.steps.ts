@@ -8,7 +8,7 @@ import { LoginPage } from "../page_objects/LoginPage";
 
 
 Given('user should be able to on the {string}', async function (string) {
-  const loginPage = new LoginPage(page);
+  const loginPage = new LginPage(page);
   await loginPage.loginPageIsVisible();
 });
 
