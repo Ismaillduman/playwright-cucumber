@@ -20,7 +20,8 @@ export class OrdersHistoryPage {
     for (let i = 0; i < count; i++) {
       const rowOrderId = await this.rows.nth(i).locator('th').textContent();
       if (orderId!.includes(rowOrderId!)) {
-        await rows.nth(i).locator('td button').first().click();
+        await this.rows.nth(i).locator('td button').first().click();
+        break;
       }
     }
   }
