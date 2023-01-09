@@ -53,7 +53,7 @@ export class PlaceOrderPage {
   }
 
   async orderConfirmationGetOrderId(expectedText:string) {
-   
+  
     await expect(this.confirmationText).toHaveText(expectedText);
     //console.log((await this.orderId.textContent()) + "Order Id");
     return await this.orderId.textContent(); //to use another pages
@@ -64,6 +64,7 @@ export class PlaceOrderPage {
   }
 
   async orderPageIsVisible(){
+    // eslint-disable-next-line playwright/valid-expect
     expect(await this.yourOrders.isVisible());
   }
 }
