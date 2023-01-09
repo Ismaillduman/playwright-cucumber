@@ -6,7 +6,7 @@ export class OrdersHistoryPage {
   idDetails: Locator;
   page: Page;
 
-  contructor(page: Page) {
+  constructor(page: Page) {
     this.page = page;
     this.orderTable = page.locator('tbody');
     this.rows = page.locator('tbody tr');
