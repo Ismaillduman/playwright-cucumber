@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2627600416
+              "duration": 2450438207
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15732875
+              "duration": 17139959
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 102951124
+              "duration": 99994542
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8036249
+              "duration": 6506834
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 32592708
+              "duration": 33815333
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 40982791
+              "duration": 34147624
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24301208
+              "duration": 24217083
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30249540
+              "duration": 28613166
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 394163000
+              "duration": 397501207
             }
           },
           {
@@ -126,7 +126,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 96206792
+              "duration": 74901792
             }
           }
         ],
