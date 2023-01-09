@@ -14,7 +14,7 @@ export class OrdersHistoryPage {
   }
 
   async selectOrderId(orderId: string) {
-    await this.orderTable.waitFor();
+    this.orderTable.waitFor();
 
     const count = await this.rows.count();
     for (let i = 0; i < count; i++) {
