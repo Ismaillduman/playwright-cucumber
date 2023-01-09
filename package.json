@@ -16,9 +16,23 @@
     "register": "npx cucumber-js -p test_runner --tags @register & ts-node ./htmlReportGenerator.ts",
     "prepare": "husky install",
     "lint": "eslint *.ts",
-    "lint-fix": "eslint --fix *.ts",
-    "pretty": "prettier --write '*.ts'",
-    "precommit": "npm run lint-fix && npm run pretty"
+    "precommit": "lint-staged",
+    "lint-staged": ""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.feature": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   },
   "author": "",
   "license": "ISC",
