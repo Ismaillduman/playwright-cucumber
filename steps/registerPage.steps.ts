@@ -16,7 +16,7 @@ When(
   'user enter {string} {string} {string} and {string}',
   async function (string, string2, string3, phone_number: string) {
     const registerPage = new RegisterPage(page);
-    await registerPage.enterFName();
+    await rgisterPage.enterFName();
     await registerPage.enterLName();
 
     await registerPage.enterEmail();
