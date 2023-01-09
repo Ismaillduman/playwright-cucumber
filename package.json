@@ -34,15 +34,13 @@
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
     "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-playwright": "^0.11.2",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0"
   },
   "lint-staged": {
-    "*.{js,ts,json,css,md,html}": [
-      "prettier --single-quote --write",
-      "git add"
-    ],
-    "*.ts": "eslint --cache --fix"
+    "*.ts": "eslint --cache --fix",
+    "*.{js,ts,json,css,md,html,feature}": "prettier --write"
   }
 }

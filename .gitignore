@@ -3,5 +3,5 @@ node_modules/
 /Screenshots/
 /test-results/ 
 /screenshots/
-
+.eslintcache/
 /cucumber_report.json
