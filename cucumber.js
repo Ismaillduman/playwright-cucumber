@@ -1,17 +1,14 @@
-let options=[
+let options = [
+  '--require-module ts-node/register',
+  '--require ./steps/*.steps.ts',
+  '--format progress-bar',
+  '--publish-quiet',
+  '--format json:./test-results/cucumber_report.json',
+].join(' ')
 
-    '--require-module ts-node/register',
-    '--require ./steps/*.steps.ts',
-    '--format progress-bar',
-    '--publish-quiet',
-    '--format json:./test-results/cucumber_report.json',
-].join(' ');
+let run_features = ['./features/', options].join(' ')
 
-let run_features= [
-    './features/',
-    options,
-].join(' ');
-
-module.exports={
-    test_runner:run_features
-};
+// eslint-disable-next-line no-undef
+module.exports = {
+  test_runner: run_features,
+}
