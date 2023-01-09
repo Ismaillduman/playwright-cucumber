@@ -19,7 +19,7 @@ Before(async () => {
   return page;
 });
 
-After(async function (Scenario) {
+After(async function () {
   if (Scenario.result!.status === Status.FAILED) {
     await this.attach(
       await page.screenshot({
