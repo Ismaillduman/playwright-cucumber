@@ -1,5 +1,4 @@
 import { Locator, Page, expect } from '@playwright/test';
-import { PlaceOrderPage } from './PlaceOrderPage';
 
 export class OrdersHistoryPage {
   orderTable: Locator;
@@ -9,7 +8,7 @@ export class OrdersHistoryPage {
 
   constructor(page: Page) {
     this.page = page;
-    orderTable = page.locator('tbody');
+    this.orderTable = page.locator('tbody');
     this.rows = page.locator('tbody tr');
     this.idDetails = page.locator('.col-text');
   }

@@ -18,8 +18,7 @@
     "lint": "eslint *.ts",
     "lint-fix": "eslint --fix *.ts",
     "pretty": "prettier --write '*.ts'",
-    "precommit": "npm run lint-fix && npm run pretty",
-    "lint-staged": ""
+    "precommit": "lint-staged"
   },
   "author": "",
   "license": "ISC",
