@@ -6,7 +6,7 @@
         "description": "",
         "id": "create-a-new-user-account;",
         "keyword": "Scenario Outline",
-        "line": 4,
+        "line": 5,
         "name": "",
         "steps": [
           {
@@ -14,34 +14,33 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2519195833
+              "duration": 2627600416
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 6,
             "name": "user should be able to on the 'Login Page'",
             "match": {
               "location": "steps/login.steps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 15340958
+              "duration": 15732875
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 7,
             "name": "user should be able to navi to 'register page'",
             "match": {
               "location": "steps/registerPage.steps.ts:15"
             },
             "result": {
-              "status": "failed",
-              "duration": 77624,
-              "error_message": "function has 0 arguments, should have 1 (if synchronous or returning a promise) or 2 (if accepting a callback)"
+              "status": "passed",
+              "duration": 102951124
             }
           },
           {
@@ -53,8 +52,8 @@
               "location": "steps/registerPage.steps.ts:21"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 8036249
             }
           },
           {
@@ -66,8 +65,8 @@
               "location": "steps/registerPage.steps.ts:27"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 32592708
             }
           },
           {
@@ -79,8 +78,8 @@
               "location": "steps/registerPage.steps.ts:36"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 40982791
             }
           },
           {
@@ -92,8 +91,8 @@
               "location": "steps/registerPage.steps.ts:43"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 24301208
             }
           },
           {
@@ -105,8 +104,8 @@
               "location": "steps/registerPage.steps.ts:50"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 30249540
             }
           },
           {
@@ -118,28 +117,27 @@
               "location": "steps/registerPage.steps.ts:56"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 394163000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 267916,
-              "error_message": "Error: path: unsupported mime type \"null\"\n    at determineScreenshotType (/Users/ismailduman/Desktop/playwright-cucumber/node_modules/playwright-core/lib/client/elementHandle.js:309:11)\n    at Page.screenshot (/Users/ismailduman/Desktop/playwright-cucumber/node_modules/playwright-core/lib/client/page.js:433:76)\n    at World.<anonymous> (/Users/ismailduman/Desktop/playwright-cucumber/hooks/world.ts:37:42)\n    at /Users/ismailduman/Desktop/playwright-cucumber/hooks/world.ts:8:71\n    at __awaiter (/Users/ismailduman/Desktop/playwright-cucumber/hooks/world.ts:4:12)\n    at World.<anonymous> (/Users/ismailduman/Desktop/playwright-cucumber/hooks/world.ts:35:12)"
+              "status": "passed",
+              "duration": 96206792
             }
           }
         ],
         "tags": [
           {
             "name": "@regression",
-            "line": 3
+            "line": 4
           },
           {
             "name": "@register",
-            "line": 3
+            "line": 4
           }
         ],
         "type": "scenario"
