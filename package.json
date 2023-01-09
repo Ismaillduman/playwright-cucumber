@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "npx cucumber-js -p test_runner --tags @End2End & ts-node ./htmlReportGenerator.ts",
+    "test": "npx cucumber-js -p test_runner --tags @regression  & ts-node ./htmlReportGenerator.ts",
     "smokeTest": "npx cucumber-js -p test_runner --tags @SmokeTest & ts-node ./htmlReportGenerator.ts",
     "regression": "npx cucumber-js -p test_runner --tags @regression & ts-node ./htmlReportGenerator.ts",
     "history": "npx cucumber-js -p test_runner --tags @history & ts-node ./htmlReportGenerator.ts",
@@ -32,6 +32,18 @@
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
     "eslint": "^8.31.0",
-    "eslint-plugin-playwright": "^0.11.2"
+    "eslint-plugin-playwright": "^0.11.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0"
+  },
+  "husky":{
+    "hooks":{"pre-commit":"lint-staged"
+  } 
+  },
+  "lint-staged": {
+    "*.{js,ts,json,css,md,html}":[
+      "prettier --single-quote --write",
+      "git add"
+    ]
   }
 }
