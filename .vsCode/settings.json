@@ -1,12 +1,15 @@
 {
-    "cucumberautocomplete.steps": [
-        "steps/*.ts"
-    ],
-    "cucumberautocomplete.syncfeatures": "features/*feature",
-    "cucumberautocomplete.strictGherkinCompletion": true,
-    "editor.quickSuggestions": {
-        "comments": true,
-        "strings": true,
-        "other": true
-    },
+  "cucumberautocomplete.steps": ["steps/*.ts"],
+  "cucumberautocomplete.syncfeatures": "features/*feature",
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "editor.quickSuggestions": {
+    "comments": true,
+    "strings": true,
+    "other": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }
