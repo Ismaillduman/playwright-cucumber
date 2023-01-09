@@ -9,4 +9,6 @@ let options = [
 let run_features = ['./features/', options].join(' ');
 
 // eslint-disable-next-line no-undef
-module.exports = { test_runner: run_features };
+module.exports = {
+  test_runner: run_features,
+};
