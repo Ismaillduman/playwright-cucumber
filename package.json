@@ -13,7 +13,8 @@
     "cart": "npx cucumber-js -p test_runner --tags @Cart & ts-node ./htmlReportGenerator.ts",
     "placeorder": "npx cucumber-js -p test_runner --tags @placeOrder & ts-node ./htmlReportGenerator.ts",
     "newpassword": "npx cucumber-js -p test_runner --tags @password_forgot & ts-node ./htmlReportGenerator.ts",
-    "register": "npx cucumber-js -p test_runner --tags @register & ts-node ./htmlReportGenerator.ts"
+    "register": "npx cucumber-js -p test_runner --tags @register & ts-node ./htmlReportGenerator.ts",
+    "prepare":"husky install"
   },
   "author": "",
   "license": "ISC",
@@ -32,6 +33,7 @@
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
     "eslint": "^8.31.0",
-    "eslint-plugin-playwright": "^0.11.2"
+    "eslint-plugin-playwright": "^0.11.2",
+    "husky": "^8.0.3"
   }
 }
