@@ -45,6 +45,6 @@
   },
   "lint-staged": {
     "*.{ts,mts,tsx,js,json}": "prettier --write",
-    "hooks/world.ts": "eslint --fix"
+    "hooks/world.ts": "eslint"
   }
 }
