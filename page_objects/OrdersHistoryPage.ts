@@ -20,8 +20,7 @@ export class OrdersHistoryPage {
     for (let i = 0; i < count; i++) {
       const rowOrderId = await this.rows.nth(i).locator('th').textContent();
       if (orderId!.includes(rowOrderId!)) {
-        await this.rows.nth(i).locator('td button').first().click();
-        break;
+        await rows.nth(i).locator('td button').first().click();
       }
     }
   }
@@ -30,6 +29,6 @@ export class OrdersHistoryPage {
     return await this.idDetails.textContent();
   }
   async writeOrderId() {
-    console.log(await this.idDetails.textContent);
+    console.log(await this.idDetails.textContent());
   }
 }
