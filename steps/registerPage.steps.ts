@@ -2,7 +2,7 @@ import { Then, When } from '@cucumber/cucumber';
 import { page } from '../hooks/world';
 import { RegisterPage } from '../page_objects/RegisterPage';
 
-When('user should be able to navi to {string}', async function () {
+When('user should be able to navi to {string}', async function (string) {
   const registerPage = new RegisterPage(page);
   await registerPage.goToRegisterPage();
 });
@@ -23,11 +23,14 @@ When(
   }
 );
 
-When('user should be able to select {string} and {string}', async function () {
-  const registerPage = new RegisterPage(page);
-  await registerPage.selectOccupAtion();
-  await registerPage.clickGender();
-});
+When(
+  'user should be able to select {string} and {string}',
+  async function (string, string2) {
+    const registerPage = new RegisterPage(page);
+    await registerPage.selectOccupAtion();
+    await registerPage.clickGender();
+  }
+);
 
 When(
   'user enter the {string} and {string}',
@@ -40,7 +43,7 @@ When(
 
 When(
   'the user confirm that  is over {int} years old and and completes the registration',
-  async function () {
+  async function (int) {
     const registerPage = new RegisterPage(page);
     await registerPage.confirmAge();
   }
