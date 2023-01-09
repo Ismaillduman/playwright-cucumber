@@ -1,5 +1,5 @@
-import { After, Before, setDefaultTimeout, Status } from "@cucumber/cucumber";
-import { Browser, chromium, Page } from "playwright";
+import { After, Before, setDefaultTimeout, Status } from '@cucumber/cucumber';
+import { Browser, chromium, Page } from 'playwright';
 
 let page: Page;
 let browser: Browser;
@@ -10,7 +10,7 @@ Before(async () => {
     browser = await chromium.launch({ headless: false });
     const context = await browser.newContext();
     page = await context.newPage();
-    await page.goto("https://rahulshettyacademy.com/client/");
+    await page.goto('https://rahulshettyacademy.com/client/');
     console.log(`captured site title as ${await page.title()}`);
   } catch (error) {
     console.log(`chrome navigation to demo site failed due to ${error}`);
@@ -26,7 +26,7 @@ After(async function (Scenario) {
         path: `./Screenshots/${Scenario.pickle.name}.png`,
         fullPage: true,
       }),
-      "image/png"
+      'image/png',
     );
   }
   await browser.close();

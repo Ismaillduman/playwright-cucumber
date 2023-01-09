@@ -1,5 +1,4 @@
-import { Locator, Page, expect } from "@playwright/test";
-import { PlaceOrderPage } from "./PlaceOrderPage";
+import { Locator, Page, expect } from '@playwright/test';
 
 export class OrdersHistoryPage {
   orderTable: Locator;
@@ -9,9 +8,9 @@ export class OrdersHistoryPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.orderTable = page.locator("tbody");
-    this.rows = page.locator("tbody tr");
-    this.idDetails = page.locator(".col-text");
+    this.orderTable = page.locator('tbody');
+    this.rows = page.locator('tbody tr');
+    this.idDetails = page.locator('.col-text');
   }
 
   async selectOrderId(orderId: string) {
@@ -19,9 +18,9 @@ export class OrdersHistoryPage {
 
     const count = await this.rows.count();
     for (let i = 0; i < count; i++) {
-      const rowOrderId = await this.rows.nth(i).locator("th").textContent();
+      const rowOrderId = await this.rows.nth(i).locator('th').textContent();
       if (orderId!.includes(rowOrderId!)) {
-        await this.rows.nth(i).locator("td button").first().click();
+        await this.rows.nth(i).locator('td button').first().click();
         break;
       }
     }
