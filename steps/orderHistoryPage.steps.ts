@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Given, When, Then } from '@cucumber/cucumber';
 import { page } from '../hooks/world';
 import { expect } from '@playwright/test';
@@ -52,7 +54,7 @@ Given(
 // );
 When(
   'user should be able to choose current product on {string}',
-  async function (string) {
+  async function (_string) {
     const ordersHistoryPage = new OrdersHistoryPage(page);
     await ordersHistoryPage.selectOrderId(orderId!);
   },

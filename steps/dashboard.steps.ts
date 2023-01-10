@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Given, Then, When } from '@cucumber/cucumber';
 import { page } from '../hooks/world';
 import { DashboardPage } from '../page_objects/DashboardPage';
@@ -20,7 +21,7 @@ When('user can be able to navi to chart page', async function () {
   const dashboardPage = new DashboardPage(page);
   await dashboardPage.naviToCart();
 });
-Then('user should see the {string}', async function (string) {
+Then('user should see the {string}', async function (_string) {
   const dashboardPage = new DashboardPage(page);
   await dashboardPage.cartPageVerify();
 });

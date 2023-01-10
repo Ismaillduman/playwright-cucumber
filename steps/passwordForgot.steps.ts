@@ -1,9 +1,10 @@
-import { Given, Then, When } from '@cucumber/cucumber';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { Then, When } from '@cucumber/cucumber';
 
 import { page } from '../hooks/world';
 import { PasswordForgotPage } from '../page_objects/PasswordForgotPage';
 
-When('user should be able to navigate to {string}', async function (string) {
+When('user should be able to navigate to {string}', async function (_string) {
   const passwordForgotPage = new PasswordForgotPage(page);
   await passwordForgotPage.goToNewpasswordPage();
 });
@@ -32,7 +33,7 @@ When('user should save the new password', async function () {
 
 Then(
   'user try to save the new password but see {string} message',
-  async function (string) {
+  async function (_string) {
     const passwordForgotPage = new PasswordForgotPage(page);
     await passwordForgotPage.savePassword();
     await passwordForgotPage.verifyUserNotFound();

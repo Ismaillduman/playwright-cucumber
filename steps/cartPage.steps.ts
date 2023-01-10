@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable import/no-unresolved */
 import { Given, When, Then } from '@cucumber/cucumber';
 import { page } from '../hooks/world';
@@ -30,7 +31,7 @@ When('user click checkout button', async () => {
   await cartPage.checkOut();
 });
 
-Then('user should be able to see the {string}', async function (string) {
+Then('user should be able to see the {string}', async function (_string) {
   const cartPage = new CartPage(page);
   await cartPage.placeOrderPageConfirmation();
 });

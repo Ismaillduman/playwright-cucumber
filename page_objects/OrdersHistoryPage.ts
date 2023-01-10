@@ -1,4 +1,5 @@
-import { Locator, Page, expect } from '@playwright/test';
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+import { Locator, Page } from '@playwright/test';
 
 export class OrdersHistoryPage {
   orderTable: Locator;

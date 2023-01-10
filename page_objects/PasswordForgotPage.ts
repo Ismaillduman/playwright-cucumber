@@ -1,4 +1,4 @@
-import { expect, Locator, Page } from "@playwright/test";
+import { expect, Locator, Page } from '@playwright/test';
 
 export class PasswordForgotPage {
   newPasswordSign: Locator;
@@ -11,15 +11,15 @@ export class PasswordForgotPage {
   userNotFound: Locator;
 
   constructor(page: Page) {
-    this.newPasswordSign = page.locator(".card-title.text-center");
+    this.newPasswordSign = page.locator('.card-title.text-center');
     this.email = page.locator("input[placeholder='Enter your email address']");
-    this.password = page.locator("#userPassword");
-    this.confirmPasword = page.locator("#confirmPassword");
+    this.password = page.locator('#userPassword');
+    this.confirmPasword = page.locator('#confirmPassword');
     this.saveNewPassword = page.locator('[type="submit"]');
     this.passwordChangeMessage = page.locator(
-      '[aria-label="Password Changed Successfully"]'
+      '[aria-label="Password Changed Successfully"]',
     );
-    this.passwordForgotLink = page.locator(".forgot-password-link");
+    this.passwordForgotLink = page.locator('.forgot-password-link');
     this.userNotFound = page.locator("[role='alertdialog']");
   }
 
@@ -27,14 +27,14 @@ export class PasswordForgotPage {
     await this.passwordForgotLink.click();
   }
   async verifyNewpasswordPage() {
-    await expect(this.newPasswordSign).toHaveText("Enter New Password");
+    await expect(this.newPasswordSign).toHaveText('Enter New Password');
     const newPasswordTabela = await this.newPasswordSign.textContent();
     console.log(newPasswordTabela);
   }
   async enterCredentials(
     email: string,
     password: string,
-    confirmPasword: string
+    confirmPasword: string,
   ) {
     await this.email.fill(email);
     await this.password.fill(password);
@@ -45,14 +45,13 @@ export class PasswordForgotPage {
   }
   async confirmPasswordChangedSuccessfully() {
     await expect(this.passwordChangeMessage).toHaveText(
-      " Password Changed Successfully "
+      ' Password Changed Successfully ',
     );
     const passwordChange = await this.passwordChangeMessage.textContent();
     console.log(passwordChange);
   }
   async verifyUserNotFound() {
-    
-    await expect(this.userNotFound).toHaveText(" User Not found. ");
+    await expect(this.userNotFound).toHaveText(' User Not found. ');
     const userNotFound = await this.userNotFound.textContent();
     console.log(userNotFound);
   }
