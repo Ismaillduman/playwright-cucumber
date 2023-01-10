@@ -1,124 +1,72 @@
 [
   {
-    "description": "Feature Description: user should be able create a new account ",
+    "description": "    Feature Description: the user should be able to see the selected product in the cart",
     "elements": [
       {
         "description": "",
-        "id": "create-a-new-user-account;",
+        "id": "user-verify-the-product-name-on-the-cart-page;on-the-cart-page-verify-the-product-name.",
         "keyword": "Scenario Outline",
         "line": 5,
-        "name": "",
+        "name": "On the cart page verify the product name.",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2627600416
+              "duration": 2606117208
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
-            "name": "user should be able to on the 'Login Page'",
-            "match": {
-              "location": "steps/login.steps.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 15732875
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "user should be able to navi to 'register page'",
-            "match": {
-              "location": "steps/registerPage.steps.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 102951124
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
             "line": 8,
-            "name": "user should see register table",
+            "name": "user logged with 'busrayusuf@gmail.com', 'HKNclb8318.' and a 'zara coat 3' inside the cart.",
             "match": {
-              "location": "steps/registerPage.steps.ts:21"
+              "location": "steps/cartPage.steps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 8036249
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "user enter 'first_name' 'last_name' 'email' and '1234567890'",
-            "match": {
-              "location": "steps/registerPage.steps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 32592708
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "user should be able to select 'OccupAtion' and 'Gender'",
-            "match": {
-              "location": "steps/registerPage.steps.ts:36"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 40982791
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "user enter the 'SCTjhnsn1256.,' and 'SCTjhnsn1256.,'",
-            "match": {
-              "location": "steps/registerPage.steps.ts:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 24301208
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the user confirm that  is over 18 years old and and completes the registration",
-            "match": {
-              "location": "steps/registerPage.steps.ts:50"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 30249540
+              "duration": 3093715000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 13,
-            "name": "the user sees the message registration completed successfully",
+            "line": 9,
+            "name": "user check to  the correctness of the product 'zara coat 3' on the Cart Page",
             "match": {
-              "location": "steps/registerPage.steps.ts:56"
+              "location": "steps/cartPage.steps.ts:28"
             },
             "result": {
               "status": "passed",
-              "duration": 394163000
+              "duration": 4446750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user click checkout button",
+            "match": {
+              "location": "steps/cartPage.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 181310708
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user should be able to see the 'Place Order Page'",
+            "match": {
+              "location": "steps/cartPage.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2843166
             }
           },
           {
@@ -126,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 96206792
+              "duration": 95275792
             }
           }
         ],
@@ -136,18 +84,194 @@
             "line": 4
           },
           {
-            "name": "@register",
+            "name": "@Cart",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-verify-the-product-name-on-the-cart-page;on-the-cart-page-verify-the-product-name.",
+        "keyword": "Scenario Outline",
+        "line": 5,
+        "name": "On the cart page verify the product name.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2497938874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "user logged with 'busrayusuf@gmail.com', 'HKNclb8318.' and a 'adidas original' inside the cart.",
+            "match": {
+              "location": "steps/cartPage.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3065855832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user check to  the correctness of the product 'adidas original' on the Cart Page",
+            "match": {
+              "location": "steps/cartPage.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3281000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user click checkout button",
+            "match": {
+              "location": "steps/cartPage.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 190714708
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user should be able to see the 'Place Order Page'",
+            "match": {
+              "location": "steps/cartPage.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3713791
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 91852375
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 4
+          },
+          {
+            "name": "@Cart",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-verify-the-product-name-on-the-cart-page;on-the-cart-page-verify-the-product-name.",
+        "keyword": "Scenario Outline",
+        "line": 5,
+        "name": "On the cart page verify the product name.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2495886707
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "user logged with 'busrayusuf@gmail.com', 'HKNclb8318.' and a 'iphone 13 pro' inside the cart.",
+            "match": {
+              "location": "steps/cartPage.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3077959582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user check to  the correctness of the product 'iphone 13 pro' on the Cart Page",
+            "match": {
+              "location": "steps/cartPage.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2795625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user click checkout button",
+            "match": {
+              "location": "steps/cartPage.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 194661167
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user should be able to see the 'Place Order Page'",
+            "match": {
+              "location": "steps/cartPage.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2786958
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 86719584
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 4
+          },
+          {
+            "name": "@Cart",
             "line": 4
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "create-a-new-user-account",
+    "id": "user-verify-the-product-name-on-the-cart-page",
     "line": 1,
     "keyword": "Feature",
-    "name": "create a new user account",
+    "name": "user verify the product name on the Cart page",
     "tags": [],
-    "uri": "features/account-suite/register.feature"
+    "uri": "features/cartPage.feature"
   }
 ]
