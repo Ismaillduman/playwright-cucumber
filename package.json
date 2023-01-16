@@ -14,6 +14,7 @@
     "placeorder": "npx cucumber-js -p test_runner --tags @placeOrder & ts-node ./htmlReportGenerator.ts",
     "newpassword": "npx cucumber-js -p test_runner --tags @password_forgot & ts-node ./htmlReportGenerator.ts",
     "register": "npx cucumber-js -p test_runner --tags @register & ts-node ./htmlReportGenerator.ts",
+    "addsame": "npx cucumber-js -p test_runner --tags @addsame & ts-node ./htmlReportGenerator.ts",
     "prepare": "husky install",
     "lint": "eslint *.ts",
     "precommit": "lint-staged",

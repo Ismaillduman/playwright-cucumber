@@ -11,6 +11,7 @@ export class DashboardPage {
   email: Locator;
   password: Locator;
   page: Page;
+  productQuantity: Locator;
   //cartPageVerify:Locator;
 
   constructor(page: Page) {
@@ -23,6 +24,7 @@ export class DashboardPage {
     this.email = page.locator('#userEmail');
     this.password = page.locator('#userPassword');
     this.signInbutton = page.locator("[value='Login']");
+    this.productQuantity = page.locator("button[class='btn btn-custom'] label");
     //this.cartPageVerify=page.locator(Text='My Cart')
   }
   async goToDashboardPage() {
@@ -55,5 +57,11 @@ export class DashboardPage {
   async cartPageVerify() {
     await expect(page.getByText('My cart')).toBeVisible();
     console.log(page.getByText('My cart'));
+  }
+
+  async quantity() {
+    const proQuantity = await this.productQuantity.textContent();
+    console.log(proQuantity);
+    await expect(this.productQuantity).toHaveText('2');
   }
 }
