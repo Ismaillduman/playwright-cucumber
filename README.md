@@ -82,65 +82,67 @@ npm install -save-dev eslint-plugin-prettier
 
 create .prettierrc file in root directory and add below configuration in it
 
-    ```java
-    {
-    "semi": true,
-    "trailingComma": "all",
-    "singleQuote": true
+```diff
 
+   {
+   "semi": true,
+   "trailingComma": "all",
+   "singleQuote": true
+
+}
+```
+
+"prettier" to the "extends" array in your .eslintrc._ file. so it gets the chance to override other configs.
+the "prettier" entry in "plugins" array in your .eslintrc._ file.
+Also add the net "prettier/prettier": ["error"] entry in "rules" object in your .eslintrc.\* file.
+
+    ````java
+
+    {
+
+"parser": "@typescript-eslint/parser",
+"plugins": [
+"prettier"
+],
+"rules": {
+"prettier/prettier": [
+"error"
+],
+"semi": [
+"error",
+"always"
+],
+"object-curly-spacing": [
+"error",
+"always"
+],
+"camelcase": "off",
+"@typescript-eslint/explicit-function-return-type": "off",
+"@typescript-eslint/no-explicit-any": 1,
+"@typescript-eslint/no-inferrable-types": [
+"warn",
+{
+"ignoreParameters": true
+}
+]
+},
+"extends": [
+"plugin:playwright/playwright-test",
+"eslint:recommended",
+"plugin:@typescript-eslint/eslint-recommended",
+"plugin:@typescript-eslint/recommended",
+"plugin:import/errors",
+"plugin:import/warnings",
+"prettier",
+"plugin:import/typescript"
+]
 }
 
 ````
 
- "prettier" to the "extends" array in your .eslintrc.* file. so it gets the chance to override other configs.
- the "prettier" entry in "plugins" array in your .eslintrc.* file.
-Also add the net "prettier/prettier": ["error"] entry in "rules" object in your .eslintrc.* file.
-
-    ```java
-    {
-  "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "prettier"
-  ],
-  "rules": {
-    "prettier/prettier": [
-      "error"
-    ],
-    "semi": [
-      "error",
-      "always"
-    ],
-    "object-curly-spacing": [
-      "error",
-      "always"
-    ],
-    "camelcase": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/no-explicit-any": 1,
-    "@typescript-eslint/no-inferrable-types": [
-      "warn",
-      {
-        "ignoreParameters": true
-      }
-    ]
-  },
-  "extends": [
-    "plugin:playwright/playwright-test",
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "prettier",
-    "plugin:import/typescript"
-  ]
-}
-    ```
-
 ## Add action script in package.json
 
-To run prettier "pretty": "prettier --write '*.ts'"
-
+To run prettier "pretty": "prettier --write '\*.ts'"
 
 # Husky
 
@@ -165,32 +167,33 @@ Add the pre-commit in .husky folder and which is created after running npm run p
 
 - Add below script in pre-commit file
 
-    ```java
-    #!/bin/sh
-    . "$(dirname "$0")/_/husky.sh"
+  ```java
+  #!/bin/sh
+  . "$(dirname "$0")/_/husky.sh"
 
-    npm run precommit
-
-    ```
+  npm run precommit
+````
 
 - Add the pre-push in .husky folder and which is created after running npm run prepare
 
 Add below script in pre-push file
 
-    ```java
+```java
+
     #!/bin/sh
     . "$(dirname "$0")/_/husky.sh"
 
     npm run prepush
-    ```
+
+```
+
 execute the below command on terminal to hook get executable by default
 
 Because files are not executable by default; they must be set to be executable
 
-  * chmod ug+x .husky/*
-*  chmod ug+x .git/hooks/*
+- chmod ug+x .husky/\*
+- chmod ug+x .git/hooks/\*
 
 ## @@ lint stage @@
 
 Usually one would run the code quality check on the whole project in the git hook scripts. lint-staged helps you to run any process or jobs on just the files changed and staged for the commit. If you have 10 modified files in your git repository, and you have staged only two files for committing, lint-staged will work on only those two files and nothing else.
-````
