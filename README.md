@@ -1,4 +1,4 @@
-# ESLINT
+# @@ ESLINT @@
 
 ## Eslint Dependencies
 
@@ -71,9 +71,6 @@ npm install --save-dev @typescript-eslint/eslint-plugin
 - To run eslint "lint": "eslint \*.ts"
 - To fix all aut-fixable errors "lint-fix": "eslint --fix \*.ts"
 
-. Prettier
-Step 1 - Install the dependencies
-
 # prettier
 
 npm install -save-dev prettier
@@ -94,6 +91,7 @@ create .prettierrc file in root directory and add below configuration in it
 }
 
 ````
+
  "prettier" to the "extends" array in your .eslintrc.* file. so it gets the chance to override other configs.
  the "prettier" entry in "plugins" array in your .eslintrc.* file.
 Also add the net "prettier/prettier": ["error"] entry in "rules" object in your .eslintrc.* file.
@@ -191,4 +189,8 @@ Because files are not executable by default; they must be set to be executable
 
   * chmod ug+x .husky/*
 *  chmod ug+x .git/hooks/*
+
+## @@ lint stage @@
+
+Usually one would run the code quality check on the whole project in the git hook scripts. lint-staged helps you to run any process or jobs on just the files changed and staged for the commit. If you have 10 modified files in your git repository, and you have staged only two files for committing, lint-staged will work on only those two files and nothing else.
 ````
