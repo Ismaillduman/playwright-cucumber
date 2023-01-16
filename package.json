@@ -16,7 +16,8 @@
     "register": "npx cucumber-js -p test_runner --tags @register & ts-node ./htmlReportGenerator.ts",
     "prepare": "husky install",
     "lint": "eslint *.ts",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "prepush": "npm run lint"
   },
   "author": "",
   "license": "ISC",

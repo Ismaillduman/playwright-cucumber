@@ -1,4 +1,4 @@
-# ESLINT
+# @@ ESLINT @@
 
 ## Eslint Dependencies
 
@@ -71,9 +71,6 @@ npm install --save-dev @typescript-eslint/eslint-plugin
 - To run eslint "lint": "eslint \*.ts"
 - To fix all aut-fixable errors "lint-fix": "eslint --fix \*.ts"
 
-. Prettier
-Step 1 - Install the dependencies
-
 # prettier
 
 npm install -save-dev prettier
@@ -94,6 +91,7 @@ create .prettierrc file in root directory and add below configuration in it
 }
 
 ````
+
  "prettier" to the "extends" array in your .eslintrc.* file. so it gets the chance to override other configs.
  the "prettier" entry in "plugins" array in your .eslintrc.* file.
 Also add the net "prettier/prettier": ["error"] entry in "rules" object in your .eslintrc.* file.
