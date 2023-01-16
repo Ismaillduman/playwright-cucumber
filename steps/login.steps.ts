@@ -1,10 +1,10 @@
 //Login and see dashboard
 
 import { Given, Then, When } from '@cucumber/cucumber';
-import { expect } from '@playwright/test';
 import { page } from '../hooks/world';
 import { LoginPage } from '../page_objects/LoginPage';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 Given('user should be able to on the {string}', async function (string) {
   const loginPage = new LoginPage(page);
   await loginPage.loginPageIsVisible();

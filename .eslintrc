@@ -32,7 +32,8 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "prettier"
+    "prettier",
+    "plugin:import/typescript"
   ]
 }
 /*
@@ -43,6 +44,6 @@ which we installed, and then I'm just extending the additional eslint code so
  These are the recommended ones that we simply installed.
  I also added some is recommended.
  So this is just some nice recommendations by the eslint.
- All right, so that's our configuration.
+ so that's our configuration.
 
 */

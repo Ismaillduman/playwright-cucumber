@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Then, When } from '@cucumber/cucumber';
 import { page } from '../hooks/world';
 import { RegisterPage } from '../page_objects/RegisterPage';
 
-When('user should be able to navi to {string}', async function (string) {
+When('user should be able to navi to {string}', async function (_string) {
   const registerPage = new RegisterPage(page);
   await registerPage.goToRegisterPage();
 });
@@ -14,7 +15,7 @@ Then('user should see register table', async function () {
 
 When(
   'user enter {string} {string} {string} and {string}',
-  async function (string, string2, string3, phone_number: string) {
+  async function (_string, _string2, _string3, phone_number: string) {
     const registerPage = new RegisterPage(page);
     await registerPage.enterFName();
     await registerPage.enterLName();
@@ -26,7 +27,7 @@ When(
 
 When(
   'user should be able to select {string} and {string}',
-  async function (string, string2) {
+  async function (_string, _string2) {
     const registerPage = new RegisterPage(page);
     await registerPage.selectOccupAtion();
     await registerPage.clickGender();
@@ -45,7 +46,7 @@ When(
 
 When(
   'the user confirm that  is over {int} years old and and completes the registration',
-  async function (int) {
+  async function (_int) {
     const registerPage = new RegisterPage(page);
     await registerPage.confirmAge();
   },

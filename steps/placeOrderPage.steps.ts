@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Given, When, Then } from '@cucumber/cucumber';
 import { page } from '../hooks/world';
 import { CartPage } from '../page_objects/CartPage';
