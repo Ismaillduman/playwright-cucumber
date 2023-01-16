@@ -189,4 +189,8 @@ Because files are not executable by default; they must be set to be executable
 
   * chmod ug+x .husky/*
 *  chmod ug+x .git/hooks/*
+
+## @@ lint stage @@
+
+Usually one would run the code quality check on the whole project in the git hook scripts. lint-staged helps you to run any process or jobs on just the files changed and staged for the commit. If you have 10 modified files in your git repository, and you have staged only two files for committing, lint-staged will work on only those two files and nothing else.
 ````
