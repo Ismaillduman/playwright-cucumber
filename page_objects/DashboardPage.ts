@@ -61,7 +61,7 @@ export class DashboardPage {
 
   async quantity() {
     const proQuantity = await this.productQuantity.textContent();
-    console.log(proQuantity);
+    console.log('product quantity in the chart ' + proQuantity);
     await expect(this.productQuantity).toHaveText('2');
   }
 }

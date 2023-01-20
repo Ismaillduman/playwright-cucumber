@@ -15,6 +15,7 @@ jobs:
         run: npx playwright install --with-deps
       - name: Run your tests
         run: npm run regression
+        run: npm run precommit 
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v2
